@@ -1,2 +1,8 @@
 <h1 class='test'>hello world :)</h1>
 <h2>Andres E</h2>
+
+<%= simple_form_for @post do |f| %>
+  <%= f.input :image %>
+  <%= f.input :caption %>
+  <%= f.button :submit %>
+    <% end %>
