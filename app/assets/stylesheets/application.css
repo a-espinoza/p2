@@ -16,7 +16,7 @@
 
   body {
     background-color: #fafafa;
-    font-family: proxima-nova, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
   }
 
   .navbar-brand {
@@ -27,7 +27,7 @@
 
   .navbar-default {
     background-color: #fff;
-    height: 54px;
+    height: 64px;
     .navbar-nav li a {
       color: #125688;
     }

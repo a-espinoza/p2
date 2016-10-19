@@ -21,13 +21,14 @@
 
   .navbar-brand {
     a {
+      font-size: 20px;
       color: #125688;
     }
   }
 
   .navbar-default {
     background-color: #fff;
-    height: 54px;
+    height: 74px;
     .navbar-nav li a {
       color: #125688;
     }
