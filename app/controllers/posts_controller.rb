@@ -12,15 +12,11 @@ class PostsController < ApplicationController
     @post = Post.new
   end
 
-  def create
-    if @post = Post.create(post_params)
-      flash[:success] = "Congrats, your pic is in the interWEBZ!! :)"
+    def create
+      @post = Post.create!(post_params.merge(user: current_user))
       redirect_to posts_path
-    else
-      flash.now[:alert] = "Hey, something went wrong! Try again!"
-      render :new
     end
-  end
+
 
   def edit
   end
