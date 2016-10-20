@@ -22,6 +22,7 @@
   .navbar-brand {
     a {
       color: #125688;
+      padding: 16px;
     }
   }
 
@@ -30,12 +31,14 @@
     height: 64px;
     .navbar-nav li a {
       color: #125688;
+
     }
   }
 
   .navbar-container {
     width: 640px;
     margin: 0 auto;
+
   }
 
   .posts-wrapper {

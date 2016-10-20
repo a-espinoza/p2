@@ -3886,3 +3886,2060 @@ Processing by PostsController#index as HTML
 Completed 200 OK in 71ms (Views: 67.2ms | ActiveRecord: 1.2ms)
 
 
+Started GET "/" for ::1 at 2016-10-19 18:02:58 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (8.0ms)
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 146ms (Views: 139.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-10-19 18:03:00 -0400
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 6ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2016-10-19 18:03:00 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (11.9ms)
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 102ms (Views: 95.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-10-19 18:03:03 -0400
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/" for ::1 at 2016-10-19 18:03:03 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (5.4ms)
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 68ms (Views: 60.7ms | ActiveRecord: 1.7ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2016-10-19 18:04:36 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"zHtwJVwzZbtK2N4oIZ1h7LLraHG4DUtvolpjG8YoxtgFfChYs0e6wKbNy5wlhAZRrsDQVWCUtXeNQ7NbA+cR3w=="}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 16ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/" for ::1 at 2016-10-19 18:04:37 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 105ms (Views: 98.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-10-19 18:04:39 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (2.7ms)
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 92ms (Views: 89.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2016-10-19 18:04:40 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7yu3o8FIpEG9Sq8pYIbsI5yTElOPVs3+MHghg93tz3Um/77Ug4DnozTdqMBjCDgiEDzUTw3R6BXFKbrstQbFrA==", "user"=>{"email"=>"a_espinosa@live.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "a_espinosa@live.com"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", 2016-10-19 22:04:41 UTC], ["last_sign_in_at", 2016-10-19 22:00:11 UTC], ["sign_in_count", 8], ["updated_at", 2016-10-19 22:04:41 UTC], ["id", 1]]
+  [1m[35m (8.6ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 230ms (ActiveRecord: 11.3ms)
+
+
+Started GET "/" for ::1 at 2016-10-19 18:04:41 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (7.7ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 66ms (Views: 61.8ms | ActiveRecord: 2.0ms)
+
+
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(868143090698726430);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.8ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(868143090698726430)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (7.4ms)[0m  [1m[34mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'posts'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (7.8ms)[0m  [1m[34mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(868143090698726430);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(868143090698726430)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (7.9ms)[0m  [1m[34mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'posts'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (4.2ms)[0m  [1m[34mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+Started DELETE "/users/sign_out" for ::1 at 2016-10-19 18:08:56 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"5XFeUHbBF3QvI2WFBDAZQywg3fp3R1xp8m5ad5vTzB3+ECJaO5zUVp92OR09O6XMkNODqjpImROOuJh8FauLgA=="}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 72ms (ActiveRecord: 9.7ms)
+
+
+Started GET "/" for ::1 at 2016-10-19 18:08:57 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (20.7ms)
+Completed 200 OK in 564ms (Views: 546.8ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-10-19 18:09:01 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (3.4ms)
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application (40.3ms)
+Completed 200 OK in 106ms (Views: 101.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2016-10-19 18:09:03 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RSp+BaRDegL910SN5PAQ5NywYXLjV3zqkxlnzvDHQ5Hktbz79ZLXHWdSSTgorD7wZVuPOu+6yGClm5khvtAmaw==", "user"=>{"email"=>"a_espinosa@live.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "a_espinosa@live.com"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", 2016-10-19 22:09:03 UTC], ["last_sign_in_at", 2016-10-19 22:04:41 UTC], ["sign_in_count", 9], ["updated_at", 2016-10-19 22:09:03 UTC], ["id", 1]]
+  [1m[35m (8.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 265ms (ActiveRecord: 10.9ms)
+
+
+Started GET "/" for ::1 at 2016-10-19 18:09:03 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (4.6ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 54ms (Views: 49.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/posts/new" for ::1 at 2016-10-19 18:09:09 -0400
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (101.7ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 163ms (Views: 158.6ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/posts" for ::1 at 2016-10-19 18:09:20 -0400
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"u6Y+NhR97tnsOV6V9RCWk0gCUP/e3shHZIAWYobdreTPAB3zJI4miKvSMe0IXkIbEusRyzoeEVjabIoiSWbNKg==", "post"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x007f816a39b988 @tempfile=#<Tempfile:/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/RackMultipart20161019-28899-16pij7x.png>, @original_filename="Screen Shot 2016-10-10 at 4.34.44 PM.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"post[image]\"; filename=\"Screen Shot 2016-10-10 at 4.34.44 PM.png\"\r\nContent-Type: image/png\r\n">, "caption"=>"123456"}, "commit"=>"Create Post"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Command :: file -b --mime '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/6d4818620e3c53a4b96d70e08d8326c220161019-28899-t5lfas.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/2b02e56ddb3c711d4abce252c5c8357d20161019-28899-9ccu7t.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/2b02e56ddb3c711d4abce252c5c8357d20161019-28899-9ccu7t.png[0]'
+Command :: convert '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/2b02e56ddb3c711d4abce252c5c8357d20161019-28899-9ccu7t.png[0]' -auto-orient -resize "640" '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/e67844532dc430256aad003b7fe246af20161019-28899-1o1ibu3'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+Command :: file -b --mime '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/6d4818620e3c53a4b96d70e08d8326c220161019-28899-8ee0p8.png'
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "posts" ("caption", "created_at", "updated_at", "image_file_name", "image_content_type", "image_file_size", "image_updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["caption", "123456"], ["created_at", 2016-10-19 22:09:20 UTC], ["updated_at", 2016-10-19 22:09:20 UTC], ["image_file_name", "Screen_Shot_2016-10-10_at_4.34.44_PM.png"], ["image_content_type", "image/png"], ["image_file_size", 334102], ["image_updated_at", 2016-10-19 22:09:20 UTC], ["user_id", 1]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 511ms (ActiveRecord: 2.9ms)
+
+
+Started GET "/posts" for ::1 at 2016-10-19 18:09:20 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (7.1ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 77ms (Views: 72.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/posts/16" for ::1 at 2016-10-19 18:09:29 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mPost Load (4.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered posts/show.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 74ms (Views: 59.9ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/posts" for ::1 at 2016-10-19 18:12:09 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (41.3ms)
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 169ms (Views: 153.1ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/" for ::1 at 2016-10-19 18:12:14 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (14.4ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 162ms (Views: 157.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2016-10-19 18:12:34 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (10.5ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 77ms (Views: 70.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for ::1 at 2016-10-19 18:12:43 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (11.4ms)
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 90ms (Views: 82.9ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/" for ::1 at 2016-10-19 18:12:59 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (5.7ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 46ms (Views: 40.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/posts" for ::1 at 2016-10-19 18:13:00 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (12.4ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 86ms (Views: 80.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/posts" for ::1 at 2016-10-19 18:13:02 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (7.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (19.5ms)
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 79ms (Views: 67.8ms | ActiveRecord: 9.2ms)
+
+
+Started GET "/posts" for ::1 at 2016-10-19 18:13:38 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered posts/index.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 63ms (Views: 56.0ms | ActiveRecord: 3.0ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2016-10-19 18:13:49 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"i4wfrTVpDH+r6IZU7U95crVCEAjL2VzwPAP5/ZIgvkwFfQxlw2Pwg/hs7cetOtMpIOKcrVWpYOT9pIvBUL4Fdg=="}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2016-10-19 18:13:49 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (5.2ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `email' for nil:NilClass):
+     5:     <div class="post">
+     6:       <div class="post-head">
+     7:         <div class="name">
+     8:           <%= current_user.email %>
+     9:         </div>
+    10:       </div>
+    11:       <div class="image center-block">
+  
+app/views/posts/index.html.erb:8:in `block in _app_views_posts_index_html_erb___1970056717240550492_70096952282500'
+app/views/posts/index.html.erb:4:in `_app_views_posts_index_html_erb___1970056717240550492_70096952282500'
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.2ms)
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (103.5ms)
+Started DELETE "/users/sign_out" for ::1 at 2016-10-19 18:14:07 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"i4wfrTVpDH+r6IZU7U95crVCEAjL2VzwPAP5/ZIgvkwFfQxlw2Pwg/hs7cetOtMpIOKcrVWpYOT9pIvBUL4Fdg=="}
+Redirected to http://localhost:3000/
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-10-19 18:14:07 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (7.9ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 1.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `email' for nil:NilClass):
+     5:     <div class="post">
+     6:       <div class="post-head">
+     7:         <div class="name">
+     8:           <%= current_user.email %>
+     9:         </div>
+    10:       </div>
+    11:       <div class="image center-block">
+  
+app/views/posts/index.html.erb:8:in `block in _app_views_posts_index_html_erb___1970056717240550492_70096934671520'
+app/views/posts/index.html.erb:4:in `_app_views_posts_index_html_erb___1970056717240550492_70096934671520'
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.3ms)
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (92.0ms)
+Started GET "/" for ::1 at 2016-10-19 18:14:22 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 37ms (Views: 32.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2016-10-19 18:14:29 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (6.5ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `email' for nil:NilClass):
+     5:     <div class="post">
+     6:       <div class="post-head">
+     7:         <div class="name">
+     8:           <%= current_user.email %>
+     9:         </div>
+    10:       </div>
+    11:       <div class="image center-block">
+  
+app/views/posts/index.html.erb:8:in `block in _app_views_posts_index_html_erb___1970056717240550492_70096971822520'
+app/views/posts/index.html.erb:4:in `_app_views_posts_index_html_erb___1970056717240550492_70096971822520'
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.7ms)
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (90.4ms)
+Started DELETE "/users/sign_out" for ::1 at 2016-10-19 18:14:33 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"i4wfrTVpDH+r6IZU7U95crVCEAjL2VzwPAP5/ZIgvkwFfQxlw2Pwg/hs7cetOtMpIOKcrVWpYOT9pIvBUL4Fdg=="}
+Redirected to http://localhost:3000/
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-10-19 18:14:33 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (5.9ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `email' for nil:NilClass):
+     5:     <div class="post">
+     6:       <div class="post-head">
+     7:         <div class="name">
+     8:           <%= current_user.email %>
+     9:         </div>
+    10:       </div>
+    11:       <div class="image center-block">
+  
+app/views/posts/index.html.erb:8:in `block in _app_views_posts_index_html_erb___1970056717240550492_70096931164600'
+app/views/posts/index.html.erb:4:in `_app_views_posts_index_html_erb___1970056717240550492_70096931164600'
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.6ms)
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (77.1ms)
+Started GET "/" for ::1 at 2016-10-19 18:14:36 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (6.0ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `email' for nil:NilClass):
+     5:     <div class="post">
+     6:       <div class="post-head">
+     7:         <div class="name">
+     8:           <%= current_user.email %>
+     9:         </div>
+    10:       </div>
+    11:       <div class="image center-block">
+  
+app/views/posts/index.html.erb:8:in `block in _app_views_posts_index_html_erb___1970056717240550492_70096903456660'
+app/views/posts/index.html.erb:4:in `_app_views_posts_index_html_erb___1970056717240550492_70096903456660'
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (12.1ms)
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (89.1ms)
+Started DELETE "/users/sign_out" for ::1 at 2016-10-19 18:15:42 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"i4wfrTVpDH+r6IZU7U95crVCEAjL2VzwPAP5/ZIgvkwFfQxlw2Pwg/hs7cetOtMpIOKcrVWpYOT9pIvBUL4Fdg=="}
+Redirected to http://localhost:3000/
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-10-19 18:15:42 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/a-espinoza/Documents/wdi/projects/p2/app/views/posts/index.html.erb:24: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/a-espinoza/Documents/wdi/projects/p2/app/views/posts/index.html.erb:26: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/views/posts/index.html.erb:24: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/views/posts/index.html.erb:26: syntax error, unexpected end-of-input, expecting keyword_end
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (9.5ms)
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (93.1ms)
+Started GET "/" for ::1 at 2016-10-19 18:16:04 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/a-espinoza/Documents/wdi/projects/p2/app/views/posts/index.html.erb:24: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/a-espinoza/Documents/wdi/projects/p2/app/views/posts/index.html.erb:26: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/views/posts/index.html.erb:24: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/views/posts/index.html.erb:26: syntax error, unexpected end-of-input, expecting keyword_end
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.7ms)
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (86.0ms)
+Started GET "/" for ::1 at 2016-10-19 18:16:23 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (7.4ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `email' for nil:NilClass):
+     6:       <div class="post-head">
+     7:         <div class="name">
+     8:           <% if !current_user %>
+     9:           <%= current_user.email %>
+    10:           <% else %>
+    11:           <%= "sign in to see user" %>
+    12:           <% end %>
+  
+app/views/posts/index.html.erb:9:in `block in _app_views_posts_index_html_erb___1970056717240550492_70096952478880'
+app/views/posts/index.html.erb:4:in `_app_views_posts_index_html_erb___1970056717240550492_70096952478880'
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.3ms)
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (83.9ms)
+Started GET "/" for ::1 at 2016-10-19 18:16:44 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/a-espinoza/Documents/wdi/projects/p2/app/views/posts/index.html.erb:27: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  
+app/views/posts/index.html.erb:27: syntax error, unexpected keyword_ensure, expecting end-of-input
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.3ms)
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (95.1ms)
+Started GET "/" for ::1 at 2016-10-19 18:16:45 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/a-espinoza/Documents/wdi/projects/p2/app/views/posts/index.html.erb:27: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  
+app/views/posts/index.html.erb:27: syntax error, unexpected keyword_ensure, expecting end-of-input
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.2ms)
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (82.8ms)
+Started GET "/" for ::1 at 2016-10-19 18:17:05 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/a-espinoza/Documents/wdi/projects/p2/app/views/posts/index.html.erb:27: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  
+app/views/posts/index.html.erb:27: syntax error, unexpected keyword_ensure, expecting end-of-input
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.2ms)
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (78.7ms)
+Started GET "/" for ::1 at 2016-10-19 18:17:11 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 65ms (Views: 58.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/posts/new" for ::1 at 2016-10-19 18:17:16 -0400
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 56ms (Views: 44.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for ::1 at 2016-10-19 18:17:23 -0400
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PhjWV6XDaoIqgDXnbzcVXKWDLknQtRZKNB83vapgogjulwe5bznFmJ3aRMZ4luVgkNMI2CWCkzRZzjBjyuz7/w==", "post"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x007f816a5104d0 @tempfile=#<Tempfile:/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/RackMultipart20161019-28899-1f11xx4.png>, @original_filename="Screen Shot 2016-09-20 at 12.44.45 PM.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"post[image]\"; filename=\"Screen Shot 2016-09-20 at 12.44.45 PM.png\"\r\nContent-Type: image/png\r\n">, "caption"=>"frfr"}, "commit"=>"Create Post"}
+Command :: file -b --mime '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/65c269fda7e553d36de5f07bfbc1b26e20161019-28899-uabckd.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/1ac0affb6f7803c1d8aab3b3c11de04820161019-28899-9uee9o.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/1ac0affb6f7803c1d8aab3b3c11de04820161019-28899-9uee9o.png[0]'
+Command :: convert '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/1ac0affb6f7803c1d8aab3b3c11de04820161019-28899-9uee9o.png[0]' -auto-orient -resize "640" '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/7393a29dbfe3d60e22190ea90244417f20161019-28899-10oeq3g'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+Command :: file -b --mime '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/65c269fda7e553d36de5f07bfbc1b26e20161019-28899-1hti7kq.png'
+  [1m[35m (0.8ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 486ms (ActiveRecord: 1.1ms)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: User must exist):
+  
+app/controllers/posts_controller.rb:16:in `create'
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.4ms)
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (91.4ms)
+Started POST "/posts" for ::1 at 2016-10-19 18:18:21 -0400
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PhjWV6XDaoIqgDXnbzcVXKWDLknQtRZKNB83vapgogjulwe5bznFmJ3aRMZ4luVgkNMI2CWCkzRZzjBjyuz7/w==", "post"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x007f81706e99b8 @tempfile=#<Tempfile:/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/RackMultipart20161019-28899-fn08lx.png>, @original_filename="Screen Shot 2016-09-20 at 12.44.45 PM.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"post[image]\"; filename=\"Screen Shot 2016-09-20 at 12.44.45 PM.png\"\r\nContent-Type: image/png\r\n">, "caption"=>"frfr"}, "commit"=>"Create Post"}
+Command :: file -b --mime '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/65c269fda7e553d36de5f07bfbc1b26e20161019-28899-1e46lbr.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/1ac0affb6f7803c1d8aab3b3c11de04820161019-28899-147lfma.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/1ac0affb6f7803c1d8aab3b3c11de04820161019-28899-147lfma.png[0]'
+Command :: convert '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/1ac0affb6f7803c1d8aab3b3c11de04820161019-28899-147lfma.png[0]' -auto-orient -resize "640" '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/79390168e93a17c3ad63400b78669f0b20161019-28899-1ba43no'
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+Command :: file -b --mime '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/65c269fda7e553d36de5f07bfbc1b26e20161019-28899-lvsjyp.png'
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 502ms (ActiveRecord: 0.7ms)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: User must exist):
+  
+app/controllers/posts_controller.rb:16:in `create'
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (79.9ms)
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.7ms)
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (174.0ms)
+Started GET "/" for ::1 at 2016-10-19 18:18:25 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 102ms (Views: 96.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-10-19 18:18:27 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (1.4ms)
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 100ms (Views: 96.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2016-10-19 18:18:29 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uN76Spc6BGYDFgM59MgSwTQJ8PBkPZRYjfo/AD3tmaAFvZIYwknaoQ0zrEdxLTXgmOiv/faBRCx3lN9/vdHlFQ==", "user"=>{"email"=>"a_espinosa@live.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (3.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "a_espinosa@live.com"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", 2016-10-19 22:18:29 UTC], ["last_sign_in_at", 2016-10-19 22:09:03 UTC], ["sign_in_count", 10], ["updated_at", 2016-10-19 22:18:29 UTC], ["id", 1]]
+  [1m[35m (9.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 240ms (ActiveRecord: 14.1ms)
+
+
+Started GET "/" for ::1 at 2016-10-19 18:18:29 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (4.9ms)
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 55ms (Views: 50.6ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/posts/10" for ::1 at 2016-10-19 18:18:31 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered posts/show.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 81ms (Views: 71.8ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/posts/10/edit" for ::1 at 2016-10-19 18:18:34 -0400
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (15.6ms)
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 92ms (Views: 73.4ms | ActiveRecord: 2.1ms)
+
+
+Started DELETE "/posts/10" for ::1 at 2016-10-19 18:18:39 -0400
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"58j4oAuqqZqbmWzQWOvfSf9yuqEbTemu1dbutkrUoR4Ld/TOR1yJ3b52WXzLzLdqU4yaZ5fiDaajpUuGa121Qw==", "id"=>"10"}
+  [1m[36mPost Load (1.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 10]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+[paperclip] deleting /Users/a-espinoza/Documents/wdi/projects/p2/public/system/posts/images/000/000/010/original/Screen_Shot_2016-10-18_at_9.28.43_AM.png
+[paperclip] deleting /Users/a-espinoza/Documents/wdi/projects/p2/public/system/posts/images/000/000/010/medium/Screen_Shot_2016-10-18_at_9.28.43_AM.png
+Redirected to http://localhost:3000/
+Completed 302 Found in 16ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/" for ::1 at 2016-10-19 18:18:39 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (7.5ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 71ms (Views: 66.8ms | ActiveRecord: 1.4ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2016-10-19 18:18:44 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"cz1IKNHhn9Tqzl2QS6sQYMw0GVdHw6sWD0jS41pg85mfgkRGnRe/k88haDzYjHhDYMo5kctsTx55O3fTe+nnxA=="}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2016-10-19 18:18:44 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 53ms (Views: 50.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2016-10-19 18:22:39 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (29.8ms)
+Completed 200 OK in 170ms (Views: 158.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-10-19 18:22:43 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (3.8ms)
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application (29.0ms)
+Completed 200 OK in 163ms (Views: 152.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2016-10-19 18:22:45 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8INXsb9CkDaAjesGQD8e9mrqTQg6OfI36+6xFrx2toVlQqs7nm5V5DyiEWcRZvkWmL0hsZusY8fLr2mOWSS/yg==", "user"=>{"email"=>"a_espinosa@live.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (5.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "a_espinosa@live.com"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", 2016-10-19 22:22:45 UTC], ["last_sign_in_at", 2016-10-19 22:18:29 UTC], ["sign_in_count", 11], ["updated_at", 2016-10-19 22:22:45 UTC], ["id", 1]]
+  [1m[35m (8.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 227ms (ActiveRecord: 15.5ms)
+
+
+Started GET "/" for ::1 at 2016-10-19 18:22:45 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (7.0ms)
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 60ms (Views: 56.0ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for ::1 at 2016-10-19 18:24:22 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (37.0ms)
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 197ms (Views: 181.3ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-10-19 18:24:26 -0400
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 9ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2016-10-19 18:24:38 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (10.5ms)
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 120ms (Views: 113.4ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/" for ::1 at 2016-10-19 18:24:53 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (10.5ms)
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 151ms (Views: 144.4ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for ::1 at 2016-10-19 18:25:09 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (49.4ms)
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 386ms (Views: 358.2ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for ::1 at 2016-10-19 18:26:31 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (10.5ms)
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 128ms (Views: 121.4ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/" for ::1 at 2016-10-19 18:26:43 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (6.4ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 69ms (Views: 64.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/posts/new" for ::1 at 2016-10-19 18:28:26 -0400
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (47.5ms)
+Started GET "/" for ::1 at 2016-10-19 18:28:26 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (9.2ms)
+  [1m[36mUser Load (3.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 143ms (Views: 135.9ms | ActiveRecord: 4.7ms)
+
+
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 482ms (Views: 470.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2016-10-19 18:28:31 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (6.0ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 40ms (Views: 36.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2016-10-19 18:28:53 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (9.2ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 118ms (Views: 113.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for ::1 at 2016-10-19 18:29:10 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (5.2ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 78ms (Views: 72.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2016-10-19 18:29:11 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (5.7ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 44ms (Views: 39.3ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for ::1 at 2016-10-19 18:30:25 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (5.2ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 93ms (Views: 89.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2016-10-19 18:30:42 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (6.0ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 106ms (Views: 102.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for ::1 at 2016-10-19 18:31:33 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (19.6ms)
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 176ms (Views: 166.6ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/" for ::1 at 2016-10-19 18:31:46 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (6.1ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 87ms (Views: 83.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for ::1 at 2016-10-19 18:46:55 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (29.2ms)
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 142ms (Views: 128.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for ::1 at 2016-10-19 18:48:41 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (5.9ms)
+Completed 500 Internal Server Error in 363ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_user_path' for #<#<Class:0x007f816dcb4d00>:0x007f816da85340>
+Did you mean?  new_user_session_path
+               new_user_password_path
+               new_session_path
+               new_post_url
+               new_user_password_url
+               new_post_path):
+    24:         <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
+    25:           <ul class="nav navbar-nav navbar-right">
+    26:             <li>
+    27:               <%= link_to "New Post", new_user_path %>
+    28:             </li>
+    29:             <li>
+    30:               <% if !current_user %>
+  
+app/views/layouts/application.html.erb:27:in `_app_views_layouts_application_html_erb___1392748193838474459_70096933610540'
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (10.9ms)
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (112.5ms)
+Started GET "/" for ::1 at 2016-10-19 18:49:13 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (4.5ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: 
+    2: 
+    3: <div class="posts-wrapper row">
+    4:   <% @posts.each do |post| %>
+    5:     <div class="post">
+    6:       <div class="post-head">
+    7:         <div class="name">
+  
+app/views/posts/index.html.erb:4:in `_app_views_posts_index_html_erb___1970056717240550492_70096910457900'
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.2ms)
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (94.3ms)
+Started GET "/" for ::1 at 2016-10-19 18:49:56 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (20.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 109ms (Views: 76.3ms | ActiveRecord: 13.8ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2016-10-19 18:50:07 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"/DLkqzm5hyKNjQtjpYpsT8B42Yf/SSLPW+y0Ri42VllnPCLzLHF34/2GNNfG9sofkNh/vQGuMNOGN3lQjUsH1w=="}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2016-10-19 18:50:07 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 44ms (Views: 41.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-10-19 18:50:09 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (2.2ms)
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 81ms (Views: 79.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2016-10-19 18:50:16 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EqZGMN73OcLxX8KJ+wocaqYPXuRT0chvurrkotnqTi6N/9+M5lGLWbGlOrCyQ9dNS8Zq2i2qEg0WR1uVnFtQzg==", "user"=>{"email"=>"joya@live.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "joya@live.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 4ms (ActiveRecord: 1.5ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EqZGMN73OcLxX8KJ+wocaqYPXuRT0chvurrkotnqTi6N/9+M5lGLWbGlOrCyQ9dNS8Zq2i2qEg0WR1uVnFtQzg==", "user"=>{"email"=>"joya@live.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (1.9ms)
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 256ms (Views: 51.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2016-10-19 18:50:20 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (1.3ms)
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/registrations/new.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 62ms (Views: 60.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2016-10-19 18:50:33 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"thBa3clWAUFzJ1D/T7sKwKp6BGj9YyL1NJ60ZleTAWNiOn+pRA7k/q/2CbrhvbLodkCEu7FaLdcJFJSCCjyHNA==", "user"=>{"email"=>"joyacox@icloud.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "joyacox@icloud.com"], ["LIMIT", 1]]
+  [1m[35mSQL (3.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "joyacox@icloud.com"], ["encrypted_password", "$2a$11$ToifZ6vYyxkUtl.itzTRvORPDkGvjh8Or359ZmMvBnlSMVWkhetYy"], ["created_at", 2016-10-19 22:50:33 UTC], ["updated_at", 2016-10-19 22:50:33 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = $1, "current_sign_in_at" = $2, "last_sign_in_at" = $3, "current_sign_in_ip" = $4, "last_sign_in_ip" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["sign_in_count", 1], ["current_sign_in_at", 2016-10-19 22:50:33 UTC], ["last_sign_in_at", 2016-10-19 22:50:33 UTC], ["current_sign_in_ip", "::1/128"], ["last_sign_in_ip", "::1/128"], ["updated_at", 2016-10-19 22:50:33 UTC], ["id", 2]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 237ms (ActiveRecord: 7.3ms)
+
+
+Started GET "/" for ::1 at 2016-10-19 18:50:33 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (5.1ms)
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 52ms (Views: 47.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for ::1 at 2016-10-19 18:54:46 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (23.9ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 191ms (Views: 174.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/posts/new" for ::1 at 2016-10-19 18:54:49 -0400
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (29.3ms)
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 69ms (Views: 63.2ms | ActiveRecord: 1.1ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (1.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[35m (5058.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS "p2_1_development"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[35m (5051.3ms)[0m  [1m[35mDROP DATABASE IF EXISTS "p2_1_development"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[35m (143.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "p2_1_development"[0m
+  [1m[35m (129.4ms)[0m  [1m[35mDROP DATABASE IF EXISTS "p2_1_test"[0m
+  [1m[35m (122.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS "p2_1_development"[0m
+  [1m[35m (120.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS "p2_1_test"[0m
+  [1m[35m (61.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying PRIMARY KEY)[0m
+  [1m[35m (3.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(868143090698726430);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreatePosts (20161019183932)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (12.8ms)[0m  [1m[35mCREATE TABLE "posts" ("id" serial primary key, "caption" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20161019183932"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddAttachmentImageToPosts (20161019184608)
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+DEPRECATION WARNING: Directly inheriting from ActiveRecord::Migration is deprecated. Please specify the Rails release the migration was written for:
+
+  class AddAttachmentImageToPosts < ActiveRecord::Migration[4.2] (called from require at /Users/a-espinoza/Documents/wdi/projects/p2/bin/rails:9)
+  [1m[35m (1.1ms)[0m  [1m[35mALTER TABLE "posts" ADD "image_file_name" character varying[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "posts" ADD "image_content_type" character varying[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "posts" ADD "image_file_size" integer[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "posts" ADD "image_updated_at" timestamp[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20161019184608"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to DeviseCreateUsers (20161019212132)
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (6.8ms)[0m  [1m[35mCREATE TABLE "users" ("id" serial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" inet, "last_sign_in_ip" inet, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20161019212132"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddUsersToPosts (20161019213152)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "posts" ADD "user_id" integer[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE  INDEX  "index_posts_on_user_id" ON "posts"  ("user_id")[0m
+  [1m[35m (11.0ms)[0m  [1m[35mALTER TABLE "posts" ADD CONSTRAINT "fk_rails_5b5ddfd518"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20161019213152"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", 2016-10-19 23:00:35 UTC], ["updated_at", 2016-10-19 23:00:35 UTC]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(868143090698726430)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (6.2ms)[0m  [1m[34mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'posts'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (4.1ms)[0m  [1m[34mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+Started GET "/posts/new" for ::1 at 2016-10-19 19:00:56 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (3.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (121.5ms)
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 854ms (Views: 804.6ms | ActiveRecord: 18.2ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-10-19 19:01:01 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (1.6ms)
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 79ms (Views: 57.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2016-10-19 19:01:02 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"H8l29THhT0ipRxq/Lw6ugto1QHDKyUEcWHEgx/WnjyeAkO9JCUf90+m94oZmR2WlN/x0TrSym370jJ/wsBaRxw==", "user"=>{"email"=>"a_espinosa@live.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "a_espinosa@live.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 6ms (ActiveRecord: 2.0ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"H8l29THhT0ipRxq/Lw6ugto1QHDKyUEcWHEgx/WnjyeAkO9JCUf90+m94oZmR2WlN/x0TrSym370jJ/wsBaRxw==", "user"=>{"email"=>"a_espinosa@live.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (2.7ms)
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 300ms (Views: 75.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2016-10-19 19:01:04 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IwEJwfi8vB6hh+uJDq2sd+zrXUbYXsJMGttJDkwXtVtz0OOTc+AWhMBHmhpjKylYJx09DTvWO5HAMMNTYJUwnw==", "user"=>{"email"=>"a_espinosa@live.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "a_espinosa@live.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 7ms (ActiveRecord: 2.8ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IwEJwfi8vB6hh+uJDq2sd+zrXUbYXsJMGttJDkwXtVtz0OOTc+AWhMBHmhpjKylYJx09DTvWO5HAMMNTYJUwnw==", "user"=>{"email"=>"a_espinosa@live.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (1.9ms)
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 261ms (Views: 72.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2016-10-19 19:01:12 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wc2xl/GNBkToFGTdoeiS3K8XVd3ksIDvMCdqTMXqUnCRHFvFetGs3onUFU7MbhfzZOE1lgc4eTLqzOAR6WjXtA==", "user"=>{"email"=>"a_espinosa@live.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (4.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "a_espinosa@live.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 8ms (ActiveRecord: 4.5ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wc2xl/GNBkToFGTdoeiS3K8XVd3ksIDvMCdqTMXqUnCRHFvFetGs3onUFU7MbhfzZOE1lgc4eTLqzOAR6WjXtA==", "user"=>{"email"=>"a_espinosa@live.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (2.3ms)
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 274ms (Views: 72.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2016-10-19 19:01:17 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (3.9ms)
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/registrations/new.html.erb within layouts/application (15.8ms)
+Completed 200 OK in 150ms (Views: 146.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2016-10-19 19:01:23 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DZfMsxsX4qFoK/4Dm3m7D/mdTUfxxC23anQB27z81a3ZvenHlk8HHrT6p0Y1fwMnJafNlL39IpVX/iE/4VNT+g==", "user"=>{"email"=>"a_espinosa@live.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (1.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "a_espinosa@live.com"], ["LIMIT", 1]]
+  [1m[35mSQL (1.8ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "a_espinosa@live.com"], ["encrypted_password", "$2a$11$BKiNmv5PgT1DTJGbzIwCPOPZhOz6mYragu84953Qns66L78gpcjBW"], ["created_at", 2016-10-19 23:01:23 UTC], ["updated_at", 2016-10-19 23:01:23 UTC]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = $1, "current_sign_in_at" = $2, "last_sign_in_at" = $3, "current_sign_in_ip" = $4, "last_sign_in_ip" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["sign_in_count", 1], ["current_sign_in_at", 2016-10-19 23:01:23 UTC], ["last_sign_in_at", 2016-10-19 23:01:23 UTC], ["current_sign_in_ip", "::1/128"], ["last_sign_in_ip", "::1/128"], ["updated_at", 2016-10-19 23:01:23 UTC], ["id", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 224ms (ActiveRecord: 5.3ms)
+
+
+Started GET "/" for ::1 at 2016-10-19 19:01:23 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (3.5ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 49ms (Views: 43.6ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/posts/new" for ::1 at 2016-10-19 19:01:26 -0400
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (15.7ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 70ms (Views: 66.6ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/posts" for ::1 at 2016-10-19 19:01:49 -0400
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lWPq0eqKSXomAC8z0Vvx58Q0Tei1UnUAoKoLa1tE/VdAZs7YfPNug9+qGFh3eSCRRhDeIgo385VjaKIM7LGfiw==", "post"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x007f880a3cfd68 @tempfile=#<Tempfile:/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/RackMultipart20161019-31118-1ad16qn.JPG>, @original_filename="IMG_6920.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"post[image]\"; filename=\"IMG_6920.JPG\"\r\nContent-Type: image/jpeg\r\n">, "caption"=>"get Sh!t Done"}, "commit"=>"Create Post"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Command :: file -b --mime '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/146c76392a70b06eff31ad1b8b0868de20161019-31118-yf6qi4.JPG'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/146c76392a70b06eff31ad1b8b0868de20161019-31118-r3eaeh.JPG[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/146c76392a70b06eff31ad1b8b0868de20161019-31118-r3eaeh.JPG[0]'
+Command :: convert '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/146c76392a70b06eff31ad1b8b0868de20161019-31118-r3eaeh.JPG[0]' -auto-orient -resize "640" '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/4acef5143e550f2d7987cbe45be82d4920161019-31118-1kv5hvc'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Command :: file -b --mime '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/146c76392a70b06eff31ad1b8b0868de20161019-31118-6b9z9v.JPG'
+  [1m[35mSQL (4.9ms)[0m  [1m[32mINSERT INTO "posts" ("caption", "created_at", "updated_at", "image_file_name", "image_content_type", "image_file_size", "image_updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["caption", "get Sh!t Done"], ["created_at", 2016-10-19 23:01:51 UTC], ["updated_at", 2016-10-19 23:01:51 UTC], ["image_file_name", "IMG_6920.JPG"], ["image_content_type", "image/jpeg"], ["image_file_size", 6004500], ["image_updated_at", 2016-10-19 23:01:49 UTC], ["user_id", 1]]
+  [1m[35m (8.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 1902ms (ActiveRecord: 14.7ms)
+
+
+Started GET "/posts" for ::1 at 2016-10-19 19:01:51 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (4.3ms)
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 75ms (Views: 67.7ms | ActiveRecord: 4.3ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2016-10-19 19:02:01 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"9Xv7WYODoOa9zLkea8IO4SRqTMBE2achIqIEPENursSlqhELCN8KfNwMyI0GRIvO75wsi6dRXvz4SY5hb+wrAA=="}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 11ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2016-10-19 19:02:01 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 47ms (Views: 43.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-10-19 19:02:07 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (1.2ms)
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 78ms (Views: 76.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2016-10-19 19:02:13 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yh/1hSFP2xajmO0nMMdS44eZRGPlTocgR3EcalTMqKfJilnd4aqoKRyPT8u84YRStAFTN9aTUSrECtRwOS9wFA==", "user"=>{"email"=>"a_espinosa@live.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "a_espinosa@live.com"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "sign_in_count" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["current_sign_in_at", 2016-10-19 23:02:13 UTC], ["sign_in_count", 2], ["updated_at", 2016-10-19 23:02:13 UTC], ["id", 1]]
+  [1m[35m (8.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 231ms (ActiveRecord: 10.1ms)
+
+
+Started GET "/" for ::1 at 2016-10-19 19:02:13 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (3.8ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 50ms (Views: 46.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/posts/new" for ::1 at 2016-10-19 19:02:16 -0400
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (12.0ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 67ms (Views: 63.1ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/posts" for ::1 at 2016-10-19 19:02:39 -0400
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TUzj96+Dm5lcKA4XFuDQQsy9Bk8+TI1tgdqWW5CHeDsErqn7oI9fwuOO1GpHfG1CbUVgSlTq4Jij2ZzpWQs1Ng==", "post"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x007f880a4dfcd0 @tempfile=#<Tempfile:/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/RackMultipart20161019-31118-1gyyxqy.JPG>, @original_filename="IMG_6882.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"post[image]\"; filename=\"IMG_6882.JPG\"\r\nContent-Type: image/jpeg\r\n">, "caption"=>"Mr.P"}, "commit"=>"Create Post"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Command :: file -b --mime '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/708e252abe8bb59fbce07b951a2b3b9920161019-31118-106xq72.JPG'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/708e252abe8bb59fbce07b951a2b3b9920161019-31118-18erei1.JPG[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/708e252abe8bb59fbce07b951a2b3b9920161019-31118-18erei1.JPG[0]'
+Command :: convert '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/708e252abe8bb59fbce07b951a2b3b9920161019-31118-18erei1.JPG[0]' -auto-orient -resize "640" '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/c7a52babd49d14c618ae16205d1b5c6e20161019-31118-nbmcy2'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+Command :: file -b --mime '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/708e252abe8bb59fbce07b951a2b3b9920161019-31118-1ir6alv.JPG'
+  [1m[35mSQL (1.8ms)[0m  [1m[32mINSERT INTO "posts" ("caption", "created_at", "updated_at", "image_file_name", "image_content_type", "image_file_size", "image_updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["caption", "Mr.P"], ["created_at", 2016-10-19 23:02:41 UTC], ["updated_at", 2016-10-19 23:02:41 UTC], ["image_file_name", "IMG_6882.JPG"], ["image_content_type", "image/jpeg"], ["image_file_size", 2774589], ["image_updated_at", 2016-10-19 23:02:39 UTC], ["user_id", 1]]
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 1883ms (ActiveRecord: 7.0ms)
+
+
+Started GET "/posts" for ::1 at 2016-10-19 19:02:41 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (5.0ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 70ms (Views: 65.4ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/posts/new" for ::1 at 2016-10-19 19:02:49 -0400
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (12.5ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 71ms (Views: 65.4ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/posts" for ::1 at 2016-10-19 19:03:28 -0400
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"B4UEFteFbYTWmEOv0dDVaen2O10Dxq6job+hx2JzdixOZ04a2Imp32k+mdKATGhpSA5dWGlgw1aDvKt1q/87IQ==", "post"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x007f880c4ad828 @tempfile=#<Tempfile:/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/RackMultipart20161019-31118-vpduns.jpeg>, @original_filename="fullsizeoutput_1183.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"post[image]\"; filename=\"fullsizeoutput_1183.jpeg\"\r\nContent-Type: image/jpeg\r\n">, "caption"=>"Yeahh!"}, "commit"=>"Create Post"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Command :: file -b --mime '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/0c7ba1df3cc352c24bfe6f254e2f1be720161019-31118-1rjibxj.jpeg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/0c7ba1df3cc352c24bfe6f254e2f1be720161019-31118-5x6uo7.jpeg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/0c7ba1df3cc352c24bfe6f254e2f1be720161019-31118-5x6uo7.jpeg[0]'
+Command :: convert '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/0c7ba1df3cc352c24bfe6f254e2f1be720161019-31118-5x6uo7.jpeg[0]' -auto-orient -resize "640" '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/51fbf64b7bc6d29f2d481374fd5116eb20161019-31118-19j3568'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Command :: file -b --mime '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/0c7ba1df3cc352c24bfe6f254e2f1be720161019-31118-e3em06.jpeg'
+  [1m[35mSQL (2.1ms)[0m  [1m[32mINSERT INTO "posts" ("caption", "created_at", "updated_at", "image_file_name", "image_content_type", "image_file_size", "image_updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["caption", "Yeahh!"], ["created_at", 2016-10-19 23:03:29 UTC], ["updated_at", 2016-10-19 23:03:29 UTC], ["image_file_name", "fullsizeoutput_1183.jpeg"], ["image_content_type", "image/jpeg"], ["image_file_size", 1957993], ["image_updated_at", 2016-10-19 23:03:28 UTC], ["user_id", 1]]
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 1190ms (ActiveRecord: 6.2ms)
+
+
+Started GET "/posts" for ::1 at 2016-10-19 19:03:29 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (8.6ms)
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 130ms (Views: 123.6ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/posts/new" for ::1 at 2016-10-19 19:03:35 -0400
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (23.0ms)
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 78ms (Views: 73.7ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/posts" for ::1 at 2016-10-19 19:03:51 -0400
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CpSxfj2MXAQ8wOy5eCBI/jXtA47bAmx4i1dosk/cY3JDdvtyMoCYX4NmNsQpvPX+lBVli7GkAY2pVGIAhlAufw==", "post"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x007f880c5c5fd0 @tempfile=#<Tempfile:/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/RackMultipart20161019-31118-67t70c.jpeg>, @original_filename="fullsizeoutput_1165.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"post[image]\"; filename=\"fullsizeoutput_1165.jpeg\"\r\nContent-Type: image/jpeg\r\n">, "caption"=>"Tuning PIDs"}, "commit"=>"Create Post"}
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Command :: file -b --mime '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/ec85491d781f00cf6ad32b54c3a9df2420161019-31118-kzv8f.jpeg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/ec85491d781f00cf6ad32b54c3a9df2420161019-31118-130euwl.jpeg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/ec85491d781f00cf6ad32b54c3a9df2420161019-31118-130euwl.jpeg[0]'
+Command :: convert '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/ec85491d781f00cf6ad32b54c3a9df2420161019-31118-130euwl.jpeg[0]' -auto-orient -resize "640" '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/739b7d5ad0758fc34cc7f5fca979936820161019-31118-5fcyur'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Command :: file -b --mime '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/ec85491d781f00cf6ad32b54c3a9df2420161019-31118-11uxpyf.jpeg'
+  [1m[35mSQL (2.1ms)[0m  [1m[32mINSERT INTO "posts" ("caption", "created_at", "updated_at", "image_file_name", "image_content_type", "image_file_size", "image_updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["caption", "Tuning PIDs"], ["created_at", 2016-10-19 23:03:52 UTC], ["updated_at", 2016-10-19 23:03:52 UTC], ["image_file_name", "fullsizeoutput_1165.jpeg"], ["image_content_type", "image/jpeg"], ["image_file_size", 3096747], ["image_updated_at", 2016-10-19 23:03:51 UTC], ["user_id", 1]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 1689ms (ActiveRecord: 6.0ms)
+
+
+Started GET "/posts" for ::1 at 2016-10-19 19:03:53 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (7.0ms)
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 118ms (Views: 111.8ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/posts/new" for ::1 at 2016-10-19 19:04:47 -0400
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (31.2ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 160ms (Views: 152.2ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/posts" for ::1 at 2016-10-19 19:05:34 -0400
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Prtmn4zDqlIjJN06HllvPdCbCclm3ng762TInQHE3Gt3WSyTg89uCZyCB0dPxdI9cWNvzAx4Fc7JZ8IvyEiRZg==", "post"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x007f8809c62800 @tempfile=#<Tempfile:/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/RackMultipart20161019-31118-sfespt.JPG>, @original_filename="IMG_6820.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"post[image]\"; filename=\"IMG_6820.JPG\"\r\nContent-Type: image/jpeg\r\n">, "caption"=>"canal"}, "commit"=>"Create Post"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Command :: file -b --mime '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/c30b53ef43b7f0c176e6a520ab709da720161019-31118-jecfz9.JPG'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/c30b53ef43b7f0c176e6a520ab709da720161019-31118-1dugbza.JPG[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/c30b53ef43b7f0c176e6a520ab709da720161019-31118-1dugbza.JPG[0]'
+Command :: convert '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/c30b53ef43b7f0c176e6a520ab709da720161019-31118-1dugbza.JPG[0]' -auto-orient -resize "640" '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/9f40098211c45bcf72934a0f6ca851a220161019-31118-ndqkb6'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Command :: file -b --mime '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/c30b53ef43b7f0c176e6a520ab709da720161019-31118-p1lzkn.JPG'
+  [1m[35mSQL (3.4ms)[0m  [1m[32mINSERT INTO "posts" ("caption", "created_at", "updated_at", "image_file_name", "image_content_type", "image_file_size", "image_updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["caption", "canal"], ["created_at", 2016-10-19 23:05:35 UTC], ["updated_at", 2016-10-19 23:05:35 UTC], ["image_file_name", "IMG_6820.JPG"], ["image_content_type", "image/jpeg"], ["image_file_size", 1449927], ["image_updated_at", 2016-10-19 23:05:34 UTC], ["user_id", 1]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 1344ms (ActiveRecord: 5.8ms)
+
+
+Started GET "/posts" for ::1 at 2016-10-19 19:05:35 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (5.6ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 121ms (Views: 115.9ms | ActiveRecord: 1.6ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2016-10-19 19:06:13 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"7u1bFbJZpjEP+d0LjOlQhZvBppWpEg5DAUGcQePw6OUx+xKYMiE2NhRFL/RIjfmR7wMwsn37P4brdrRGxHGB6Q=="}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2016-10-19 19:06:13 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 52ms (Views: 49.2ms | ActiveRecord: 0.6ms)
+
+
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+Started GET "/" for ::1 at 2016-10-19 20:30:14 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (26.4ms)
+Completed 200 OK in 232ms (Views: 213.7ms | ActiveRecord: 0.8ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (2.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[35m (142.4ms)[0m  [1m[35mDROP DATABASE IF EXISTS "p2_1_development"[0m
+  [1m[35m (137.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS "p2_1_test"[0m
+  [1m[35m (32.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying PRIMARY KEY)[0m
+  [1m[35m (3.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(868143090698726430);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreatePosts (20161019183932)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (10.3ms)[0m  [1m[35mCREATE TABLE "posts" ("id" serial primary key, "caption" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20161019183932"]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddAttachmentImageToPosts (20161019184608)
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+DEPRECATION WARNING: Directly inheriting from ActiveRecord::Migration is deprecated. Please specify the Rails release the migration was written for:
+
+  class AddAttachmentImageToPosts < ActiveRecord::Migration[4.2] (called from require at /Users/a-espinoza/Documents/wdi/projects/p2/bin/rails:9)
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "posts" ADD "image_file_name" character varying[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "posts" ADD "image_content_type" character varying[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "posts" ADD "image_file_size" integer[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "posts" ADD "image_updated_at" timestamp[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20161019184608"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to DeviseCreateUsers (20161019212132)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (5.8ms)[0m  [1m[35mCREATE TABLE "users" ("id" serial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" inet, "last_sign_in_ip" inet, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20161019212132"]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddUsersToPosts (20161019213152)
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "posts" ADD "user_id" integer[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE  INDEX  "index_posts_on_user_id" ON "posts"  ("user_id")[0m
+  [1m[35m (9.9ms)[0m  [1m[35mALTER TABLE "posts" ADD CONSTRAINT "fk_rails_5b5ddfd518"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20161019213152"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", 2016-10-20 00:30:53 UTC], ["updated_at", 2016-10-20 00:30:53 UTC]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_advisory_unlock(868143090698726430)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (5.7ms)[0m  [1m[34mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'posts'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (4.2ms)[0m  [1m[34mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+Started GET "/" for ::1 at 2016-10-19 20:32:24 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.9ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 581ms (Views: 550.7ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-10-19 20:32:28 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (1.6ms)
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application (73.4ms)
+Completed 200 OK in 138ms (Views: 105.1ms | ActiveRecord: 14.3ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2016-10-19 20:32:30 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lhwPPuXi/0GZJfsp1yJtYdmo6y1vlRpNy0nS/fL3GxUPATnu7Ra531NMsHXiRLj7aLdtWzQx8wfqN3RfTwJCFg==", "user"=>{"email"=>"a_espinosa@live.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (7.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "a_espinosa@live.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 20ms (ActiveRecord: 7.1ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lhwPPuXi/0GZJfsp1yJtYdmo6y1vlRpNy0nS/fL3GxUPATnu7Ra531NMsHXiRLj7aLdtWzQx8wfqN3RfTwJCFg==", "user"=>{"email"=>"a_espinosa@live.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (1.5ms)
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 280ms (Views: 75.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2016-10-19 20:32:32 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uSC2A1cVm5cAHhWLTfcXGdO3zhjyj9xiDGI5wrtuBa16QOMFMdIf6YwnIPJcDn5Tb5F6KUHeD0qqGrupDYVCfw==", "user"=>{"email"=>"a_espinosa@live.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "a_espinosa@live.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 7ms (ActiveRecord: 2.6ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uSC2A1cVm5cAHhWLTfcXGdO3zhjyj9xiDGI5wrtuBa16QOMFMdIf6YwnIPJcDn5Tb5F6KUHeD0qqGrupDYVCfw==", "user"=>{"email"=>"a_espinosa@live.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (3.3ms)
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 251ms (Views: 60.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for ::1 at 2016-10-19 20:32:33 -0400
+Processing by Devise::PasswordsController#new as HTML
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/passwords/new.html.erb within layouts/application
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (2.2ms)
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/passwords/new.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 87ms (Views: 74.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-10-19 20:32:36 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (2.8ms)
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 95ms (Views: 90.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2016-10-19 20:32:40 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6yZKwaxloLF1wMBaNb1sgtOwy9O08YDseMiPBfPQzCFyO3wRpJHmL7+piwYA27kYYq9Npe9VaaZZtimnTiWVIg==", "user"=>{"email"=>"a_espinosa@live.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "a_espinosa@live.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 7ms (ActiveRecord: 3.1ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6yZKwaxloLF1wMBaNb1sgtOwy9O08YDseMiPBfPQzCFyO3wRpJHmL7+piwYA27kYYq9Npe9VaaZZtimnTiWVIg==", "user"=>{"email"=>"a_espinosa@live.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (1.0ms)
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 259ms (Views: 74.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2016-10-19 20:32:42 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"m/i++7Xo0YvfIFtZBcOw8b6KrL3bBrqRtwQPeCuH52BYmOv90y9V9VMZbiAUOtm7AqwYjGhXabkRfI0TnWygsg==", "user"=>{"email"=>"a_espinosa@live.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "a_espinosa@live.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.7ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"m/i++7Xo0YvfIFtZBcOw8b6KrL3bBrqRtwQPeCuH52BYmOv90y9V9VMZbiAUOtm7AqwYjGhXabkRfI0TnWygsg==", "user"=>{"email"=>"a_espinosa@live.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (1.0ms)
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 244ms (Views: 44.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2016-10-19 20:32:53 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YtbjgiKiyIDaMvjtsOzVH+kNptbOPH55ynOuDs1Aj1mhtraERGVM/lYLzZShFbxVVSsS531trVFsCyxle6vIiw==", "user"=>{"email"=>"123@123", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "123@123"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.9ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YtbjgiKiyIDaMvjtsOzVH+kNptbOPH55ynOuDs1Aj1mhtraERGVM/lYLzZShFbxVVSsS531trVFsCyxle6vIiw==", "user"=>{"email"=>"123@123", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (1.3ms)
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 250ms (Views: 69.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2016-10-19 20:32:54 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (1.1ms)
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/registrations/new.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 73ms (Views: 69.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2016-10-19 20:33:06 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CQstMVtyLwMoGRlCJYxG6Kvp8dSinM0cMDJwchXfYo/1buqXySJvPv07wwUurckLAgD0C49d48TVcsWdgE2tiw==", "user"=>{"email"=>"123@123.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (3.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "123@123.com"], ["LIMIT", 1]]
+  [1m[35mSQL (1.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "123@123.com"], ["encrypted_password", "$2a$11$oJriuli71zEEgluBn4emNuoYmmwPboWAAeirpEvHU7/Pci/mk8EO6"], ["created_at", 2016-10-20 00:33:07 UTC], ["updated_at", 2016-10-20 00:33:07 UTC]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = $1, "current_sign_in_at" = $2, "last_sign_in_at" = $3, "current_sign_in_ip" = $4, "last_sign_in_ip" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["sign_in_count", 1], ["current_sign_in_at", 2016-10-20 00:33:07 UTC], ["last_sign_in_at", 2016-10-20 00:33:07 UTC], ["current_sign_in_ip", "::1/128"], ["last_sign_in_ip", "::1/128"], ["updated_at", 2016-10-20 00:33:07 UTC], ["id", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 238ms (ActiveRecord: 7.7ms)
+
+
+Started GET "/" for ::1 at 2016-10-19 20:33:07 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (3.7ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 47ms (Views: 41.3ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/posts/new" for ::1 at 2016-10-19 20:35:21 -0400
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 62ms (ActiveRecord: 12.9ms)
+
+
+  
+NoMethodError (undefined method `post' for #<User:0x007f9875cc6248>
+Did you mean?  posts):
+  
+app/controllers/posts_controller.rb:12:in `new'
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.1ms)
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (126.0ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(868143090698726430);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddUserIdToPosts (20161020003652)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.5ms)[0m  [1m[35mALTER TABLE "posts" ADD "user_id" integer[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(868143090698726430)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(868143090698726430);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddUserIdToPosts (20161020003652)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.7ms)[0m  [1m[35mALTER TABLE "posts" ADD "user_id" integer[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(868143090698726430)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(868143090698726430);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.8ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(868143090698726430)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (5.7ms)[0m  [1m[34mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'posts'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (3.9ms)[0m  [1m[34mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+Started GET "/posts/new" for ::1 at 2016-10-19 20:40:54 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (5.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (221.9ms)
+Completed 200 OK in 923ms (Views: 746.6ms | ActiveRecord: 24.4ms)
+
+
+  [1m[36mPost Load (1.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY "posts"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+Started POST "/posts" for ::1 at 2016-10-19 20:42:02 -0400
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uFxk7AKGCWLPBvFgCH5F6+zYFclUeIF8dO42IEFowil7PDHqZEGNHEM/xBkZhyyhUP6h+OcpUlTSlrRL94OF+w==", "post"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x007f8b95ee4940 @tempfile=#<Tempfile:/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/RackMultipart20161019-32888-q7omne.JPG>, @original_filename="IMG_6823.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"post[image]\"; filename=\"IMG_6823.JPG\"\r\nContent-Type: image/jpeg\r\n">, "caption"=>"Canal"}, "commit"=>"Create Post"}
+  [1m[36mUser Load (4.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Command :: file -b --mime '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/0a9927d835f8e53ac8fb9837b5df6e4620161019-32888-1miyaqa.JPG'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/0a9927d835f8e53ac8fb9837b5df6e4620161019-32888-n3273r.JPG[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/0a9927d835f8e53ac8fb9837b5df6e4620161019-32888-n3273r.JPG[0]'
+Command :: convert '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/0a9927d835f8e53ac8fb9837b5df6e4620161019-32888-n3273r.JPG[0]' -auto-orient -resize "640" '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/b4c60a0e1928469b4352cd1c87c2c58d20161019-32888-1u4s7gl'
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 1466ms (ActiveRecord: 4.5ms)
+
+
+Started GET "/posts" for ::1 at 2016-10-19 20:42:04 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (7.1ms)
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 94ms (Views: 86.0ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/" for ::1 at 2016-10-19 20:42:13 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.7ms)
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 131ms (Views: 126.6ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/posts/1/edit" for ::1 at 2016-10-19 20:42:22 -0400
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (1.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 404 Not Found in 9ms (ActiveRecord: 1.8ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=1):
+  
+app/controllers/posts_controller.rb:46:in `set_post'
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (14.2ms)
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (97.9ms)
+  [1m[36mPost Load (1.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY "posts"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+Started GET "/posts/1/edit" for ::1 at 2016-10-19 20:45:02 -0400
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (3.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 404 Not Found in 27ms (ActiveRecord: 3.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=1):
+  
+app/controllers/posts_controller.rb:46:in `set_post'
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.6ms)
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (71.8ms)
+Started GET "/posts" for ::1 at 2016-10-19 20:45:06 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (3.0ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 96ms (Views: 91.0ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/posts/index" for ::1 at 2016-10-19 20:45:08 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"index"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 4ms (ActiveRecord: 0.8ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=index):
+  
+app/controllers/posts_controller.rb:46:in `set_post'
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.7ms)
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (78.9ms)
+Started GET "/posts/" for ::1 at 2016-10-19 20:45:11 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.9ms)
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 45ms (Views: 41.4ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/posts/new" for ::1 at 2016-10-19 20:45:13 -0400
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 78ms (Views: 61.0ms | ActiveRecord: 3.2ms)
+
+
+Started POST "/posts" for ::1 at 2016-10-19 20:45:18 -0400
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7fEBW4XeFwp0k4LDXRIQ6+rj+z8otzbbL/lmGMOOsb6tEyZP2A0VzhYAtboQB5fHNMlOYk450DdtlDTQw8SfMg==", "post"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x007f8b9645bd10 @tempfile=#<Tempfile:/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/RackMultipart20161019-32888-1syq7sm.JPG>, @original_filename="IMG_6823.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"post[image]\"; filename=\"IMG_6823.JPG\"\r\nContent-Type: image/jpeg\r\n">, "caption"=>"dwede"}, "commit"=>"Create Post"}
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Command :: file -b --mime '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/0a9927d835f8e53ac8fb9837b5df6e4620161019-32888-15l4nau.JPG'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/0a9927d835f8e53ac8fb9837b5df6e4620161019-32888-1nv2px9.JPG[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/0a9927d835f8e53ac8fb9837b5df6e4620161019-32888-1nv2px9.JPG[0]'
+Command :: convert '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/0a9927d835f8e53ac8fb9837b5df6e4620161019-32888-1nv2px9.JPG[0]' -auto-orient -resize "640" '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/9cd7d982e582fbf37a61756dd18e7c4c20161019-32888-7mo689'
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 1480ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/posts" for ::1 at 2016-10-19 20:45:19 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (5.1ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 55ms (Views: 50.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/posts/new" for ::1 at 2016-10-19 20:48:27 -0400
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 181ms (Views: 129.1ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/posts" for ::1 at 2016-10-19 20:48:34 -0400
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KNI3nqG1zOLFpklHHht7LxoItLQDuBWC+L4AB4y79txoMBCK/GbOJqc1fj5TDvwDxCIB6WU2826601LPjPHYUA==", "post"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x007f8b970597c0 @tempfile=#<Tempfile:/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/RackMultipart20161019-32888-1k9g1xx.JPG>, @original_filename="IMG_6826.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"post[image]\"; filename=\"IMG_6826.JPG\"\r\nContent-Type: image/jpeg\r\n">, "caption"=>"wdw"}, "commit"=>"Create Post"}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Command :: file -b --mime '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/630449963f75e508bc0d7bf17fe1009a20161019-32888-1rd4zhd.JPG'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/630449963f75e508bc0d7bf17fe1009a20161019-32888-vglbof.JPG[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/630449963f75e508bc0d7bf17fe1009a20161019-32888-vglbof.JPG[0]'
+Command :: convert '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/630449963f75e508bc0d7bf17fe1009a20161019-32888-vglbof.JPG[0]' -auto-orient -resize "640" '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/07696356cfbd71fef41fcb9aa731a8cf20161019-32888-1sr33s'
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 1361ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/posts" for ::1 at 2016-10-19 20:48:35 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.3ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 51ms (Views: 46.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for ::1 at 2016-10-19 20:48:40 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (3.3ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 55ms (Views: 49.3ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for ::1 at 2016-10-19 20:48:41 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (3.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (5.6ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 114ms (Views: 103.3ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/posts" for ::1 at 2016-10-19 20:49:00 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.6ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 71ms (Views: 67.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/posts" for ::1 at 2016-10-19 20:50:26 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (149.9ms)
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 286ms (Views: 269.9ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/posts" for ::1 at 2016-10-19 20:50:28 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.0ms)
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 42ms (Views: 36.4ms | ActiveRecord: 2.2ms)
+
+

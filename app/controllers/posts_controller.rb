@@ -9,14 +9,13 @@ class PostsController < ApplicationController
   end
 
   def new
-    @post = Post.new
+    @post = current_user.posts.build
   end
 
     def create
-      @post = Post.create!(post_params.merge(user: current_user))
+      @post = current_user.posts.build(post_params)
       redirect_to posts_path
     end
-
 
   def edit
   end
