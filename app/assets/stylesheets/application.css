@@ -133,3 +133,8 @@ float: right;
    border-radius: 5px;
    box-shadow: 2px 2px 1px #cccccc;
   }
+
+  .text-center{
+margin: auto;
+max-width: 600px;
+}
