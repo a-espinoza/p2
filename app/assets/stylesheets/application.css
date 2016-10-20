@@ -19,11 +19,36 @@
     font-family: 'Roboto', sans-serif;
   }
 
+  .caption{
+    border: 2px solid red;
+  }
+
+  .new_post{
+    background-color: #FFFFFF;
+    margin-top: 25px;;
+   border: none;
+   color: white;
+   padding: 10px 25px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 20px;
+   border-radius: 5px;
+   box-shadow: 2px 2px 1px #cccccc;
+}
+
   .navbar-brand {
+      font-size: 25px;
     a {
       color: #125688;
       padding: 16px;
     }
+  }
+
+  .sign{
+    color: #256c9e;
+    float: right;
+    padding-bottom: 10px;
   }
 
   .navbar-default {
@@ -31,19 +56,18 @@
     height: 64px;
     .navbar-nav li a {
       color: #125688;
-
+      text-decoration: none;
     }
   }
 
   .navbar-container {
     width: 640px;
     margin: 0 auto;
-
   }
 
   .posts-wrapper {
     padding-top: 40px;
-    margin: 0 auto;
+    margin:  auto;
     max-width: 642px;
     width: 100%;
   }
@@ -55,14 +79,15 @@
     border-radius: 3px;
     border-width: 1px;
     margin-bottom: 60px;
+    box-shadow: 2px 2px 1px #cccccc;
   }
 
   .post-head {
-    height: 64px;
+    height: 40px;
     padding: 14px 20px;
     color: #125688;
-    font-size: 15px;
-    line-height: 18px;
+    font-size: 20px;
+    line-height: 28px;
     .thumbnail {}
     .name {
       display: block;

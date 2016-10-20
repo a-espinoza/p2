@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Project 2 aE</title>
+    <title>DronesTagram</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -23,19 +23,22 @@
         </div>
         <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-            <li>
-              <%= link_to "New Post", new_post_path %>
-            </li>
-            <li>
+            <li class="sign">
               <% if !current_user %>
                 <%= link_to "Sign up", new_user_registration_path %>
+                |
                 <%= link_to "Sign in", new_user_session_path %>
               <% else %>
+
                 <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
+                |
                 <%= current_user.email %>
               <% end %>
             </li>
           </ul>
+          <li class='new_post'>
+            <%= link_to "New Post", new_post_path %>
+          </li>
         </div>
       </div>
     </nav>
