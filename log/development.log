@@ -12454,3 +12454,922 @@ Processing by PostsController#index as HTML
 Completed 200 OK in 96ms (Views: 88.8ms | ActiveRecord: 3.3ms)
 
 
+Started GET "/posts" for ::1 at 2016-10-20 10:35:07 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (3.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered posts/index.html.erb within layouts/application (90.3ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 732ms (Views: 664.9ms | ActiveRecord: 20.0ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (1.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[35m (143.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS "p2_1_development"[0m
+  [1m[35m (127.3ms)[0m  [1m[35mDROP DATABASE IF EXISTS "p2_1_test"[0m
+  [1m[35m (599.1ms)[0m  [1m[35mCREATE DATABASE "p2_1_development" ENCODING = 'unicode'[0m
+  [1m[35m (253.9ms)[0m  [1m[35mCREATE DATABASE "p2_1_test" ENCODING = 'unicode'[0m
+  [1m[35m (22.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying PRIMARY KEY)[0m
+  [1m[35m (4.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(868143090698726430);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreatePosts (20161019183932)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (7.5ms)[0m  [1m[35mCREATE TABLE "posts" ("id" serial primary key, "caption" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20161019183932"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddAttachmentImageToPosts (20161019184608)
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+DEPRECATION WARNING: Directly inheriting from ActiveRecord::Migration is deprecated. Please specify the Rails release the migration was written for:
+
+  class AddAttachmentImageToPosts < ActiveRecord::Migration[4.2] (called from require at /Users/a-espinoza/Documents/wdi/projects/p2/p2/bin/rails:9)
+  [1m[35m (1.4ms)[0m  [1m[35mALTER TABLE "posts" ADD "image_file_name" character varying[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "posts" ADD "image_content_type" character varying[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "posts" ADD "image_file_size" integer[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "posts" ADD "image_updated_at" timestamp[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20161019184608"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to DeviseCreateUsers (20161019212132)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (5.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" serial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" inet, "last_sign_in_ip" inet, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20161019212132"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddUsersToPosts (20161019213152)
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "posts" ADD "user_id" integer[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE  INDEX  "index_posts_on_user_id" ON "posts"  ("user_id")[0m
+  [1m[35m (6.2ms)[0m  [1m[35mALTER TABLE "posts" ADD CONSTRAINT "fk_rails_5b5ddfd518"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20161019213152"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", 2016-10-20 14:35:42 UTC], ["updated_at", 2016-10-20 14:35:42 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(868143090698726430)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (6.1ms)[0m  [1m[34mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'posts'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (3.8ms)[0m  [1m[34mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+Started GET "/posts" for ::1 at 2016-10-20 10:35:50 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (8.2ms)
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 599ms (Views: 561.0ms | ActiveRecord: 14.4ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-10-20 11:00:23 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (2.4ms)
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application (76.8ms)
+Completed 200 OK in 216ms (Views: 160.3ms | ActiveRecord: 6.9ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2016-10-20 11:00:25 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0rtZ2LmMKWsYCr1rdSGnTJBn9CfWC+nqWHPyReCRiCaG7wasuejrs+hIwB3PTP7bvCXjwTW8Iyu/NEulaNKQPA==", "user"=>{"email"=>"a_espinosa@live.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (5.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "a_espinosa@live.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 18ms (ActiveRecord: 5.6ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0rtZ2LmMKWsYCr1rdSGnTJBn9CfWC+nqWHPyReCRiCaG7wasuejrs+hIwB3PTP7bvCXjwTW8Iyu/NEulaNKQPA==", "user"=>{"email"=>"a_espinosa@live.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (1.4ms)
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 282ms (Views: 65.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2016-10-20 11:00:31 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kV20p91Dc0JmLgPdArBKoWP+sUB6AtoNBRK4YLo3PeRx4Wo/k2dvZBy/iQz3wK3KGFb4Ny07iCEcu03Nr3iGRg==", "user"=>{"email"=>"a_espinosa@live.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "a_espinosa@live.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 7ms (ActiveRecord: 3.2ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kV20p91Dc0JmLgPdArBKoWP+sUB6AtoNBRK4YLo3PeRx4Wo/k2dvZBy/iQz3wK3KGFb4Ny07iCEcu03Nr3iGRg==", "user"=>{"email"=>"a_espinosa@live.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (2.4ms)
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 329ms (Views: 133.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2016-10-20 11:00:37 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gogNP+ZMcBw+PqI3tiA6+33y3iHq4X/FnpaHCwoa/8xiNNOnqGhsOkSvKOZDUN2QBlqXVr3YLemHP3KmH1VEbg==", "user"=>{"email"=>"a_espinosa@live.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (3.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "a_espinosa@live.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 7ms (ActiveRecord: 3.7ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gogNP+ZMcBw+PqI3tiA6+33y3iHq4X/FnpaHCwoa/8xiNNOnqGhsOkSvKOZDUN2QBlqXVr3YLemHP3KmH1VEbg==", "user"=>{"email"=>"a_espinosa@live.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (1.5ms)
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 250ms (Views: 54.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2016-10-20 11:00:40 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (2.1ms)
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/registrations/new.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 64ms (Views: 61.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2016-10-20 11:00:52 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mYdhvBCDPCvFvf9YS7RMpQFoRBx18wQerP0j3PoBuGON6i5IDauT4wWrNVTieDEgiZULDUfOYl/LhUd3qPFJdw==", "user"=>{"email"=>"a_espinosa@live.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (2.9ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "a_espinosa@live.com"], ["LIMIT", 1]]
+  [1m[35mSQL (2.1ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "a_espinosa@live.com"], ["encrypted_password", "$2a$11$1ZRpuxY.Su2/cV0JJ84k3eD42Ew1rHYY4CEQ6R3Z7jtxvd6rTF61q"], ["created_at", 2016-10-20 15:00:52 UTC], ["updated_at", 2016-10-20 15:00:52 UTC]]
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.8ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = $1, "current_sign_in_at" = $2, "last_sign_in_at" = $3, "current_sign_in_ip" = $4, "last_sign_in_ip" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["sign_in_count", 1], ["current_sign_in_at", 2016-10-20 15:00:52 UTC], ["last_sign_in_at", 2016-10-20 15:00:52 UTC], ["current_sign_in_ip", "::1/128"], ["last_sign_in_ip", "::1/128"], ["updated_at", 2016-10-20 15:00:52 UTC], ["id", 1]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 239ms (ActiveRecord: 10.6ms)
+
+
+Started GET "/" for ::1 at 2016-10-20 11:00:52 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (3.5ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 65ms (Views: 58.6ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/posts/new" for ::1 at 2016-10-20 11:01:02 -0400
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (80.5ms)
+Completed 200 OK in 205ms (Views: 135.9ms | ActiveRecord: 15.8ms)
+
+
+Started POST "/posts" for ::1 at 2016-10-20 11:02:40 -0400
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9OD9c/Drl9PPXeu2CbHO+16UW/8/4CpmN9UyRFNd92AP8bxEUU+F5pKuF5R56CmUPRMQUZ9yIOYIyKDXBZEyYg==", "post"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x007fd09dee4e20 @tempfile=#<Tempfile:/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/RackMultipart20161020-11571-zk3dvw.png>, @original_filename="Screen Shot 2016-10-20 at 10.58.22 AM.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"post[image]\"; filename=\"Screen Shot 2016-10-20 at 10.58.22 AM.png\"\r\nContent-Type: image/png\r\n">, "caption"=>"Kiss Flight Controller #flyduino #dronesAreGood"}, "commit"=>"Create Post"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Command :: file -b --mime '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/2f9df3921f2e900bec2ddafe828a359220161020-11571-efe152.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/b9fad890cf4344f35c1ab0b469464bde20161020-11571-1s5tqw0.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/b9fad890cf4344f35c1ab0b469464bde20161020-11571-1s5tqw0.png[0]'
+Command :: convert '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/b9fad890cf4344f35c1ab0b469464bde20161020-11571-1s5tqw0.png[0]' -auto-orient -resize "640" '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/5b75cf80a11848ac67a7ed36874043bd20161020-11571-nxrrrn'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+Command :: file -b --mime '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/2f9df3921f2e900bec2ddafe828a359220161020-11571-h3ne2f.png'
+  [1m[35mSQL (4.5ms)[0m  [1m[32mINSERT INTO "posts" ("caption", "created_at", "updated_at", "image_file_name", "image_content_type", "image_file_size", "image_updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["caption", "Kiss Flight Controller #flyduino #dronesAreGood"], ["created_at", 2016-10-20 15:02:41 UTC], ["updated_at", 2016-10-20 15:02:41 UTC], ["image_file_name", "Screen_Shot_2016-10-20_at_10.58.22_AM.png"], ["image_content_type", "image/png"], ["image_file_size", 632000], ["image_updated_at", 2016-10-20 15:02:40 UTC], ["user_id", 1]]
+  [1m[35m (5.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 735ms (ActiveRecord: 11.2ms)
+
+
+Started GET "/" for ::1 at 2016-10-20 11:02:41 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered posts/index.html.erb within layouts/application (14.5ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 96ms (Views: 88.9ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/posts/new" for ::1 at 2016-10-20 11:02:48 -0400
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 81ms (Views: 62.1ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/posts" for ::1 at 2016-10-20 11:03:20 -0400
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0zn9t86sdoU8iIXHEnJ+FliNfv6yVf67t0AV6ndHwo8oKLyAbwhksGF7eeViK5l5Owo1UBLH9DuIXYd5IYsHjQ==", "post"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x007fd0a19f43d0 @tempfile=#<Tempfile:/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/RackMultipart20161020-11571-1jhc0hz.png>, @original_filename="Screen Shot 2016-10-20 at 10.58.33 AM.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"post[image]\"; filename=\"Screen Shot 2016-10-20 at 10.58.33 AM.png\"\r\nContent-Type: image/png\r\n">, "caption"=>"1st Place #winning #capitolQuads #teamPilot"}, "commit"=>"Create Post"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Command :: file -b --mime '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/3772bd08d8aa8636a43aecbe2d7d935120161020-11571-105xpjx.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/306652a2a4dd23f01bf9daab4f67f8b120161020-11571-rthl5q.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/306652a2a4dd23f01bf9daab4f67f8b120161020-11571-rthl5q.png[0]'
+Command :: convert '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/306652a2a4dd23f01bf9daab4f67f8b120161020-11571-rthl5q.png[0]' -auto-orient -resize "640" '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/bb1b1147a30233c321bf47637bbdc10420161020-11571-1wfd596'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+Command :: file -b --mime '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/3772bd08d8aa8636a43aecbe2d7d935120161020-11571-l0w5h4.png'
+  [1m[35mSQL (2.1ms)[0m  [1m[32mINSERT INTO "posts" ("caption", "created_at", "updated_at", "image_file_name", "image_content_type", "image_file_size", "image_updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["caption", "1st Place #winning #capitolQuads #teamPilot"], ["created_at", 2016-10-20 15:03:21 UTC], ["updated_at", 2016-10-20 15:03:21 UTC], ["image_file_name", "Screen_Shot_2016-10-20_at_10.58.33_AM.png"], ["image_content_type", "image/png"], ["image_file_size", 766239], ["image_updated_at", 2016-10-20 15:03:20 UTC], ["user_id", 1]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 876ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/" for ::1 at 2016-10-20 11:03:21 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (3.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered posts/index.html.erb within layouts/application (10.6ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 83ms (Views: 75.2ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/posts/new" for ::1 at 2016-10-20 11:03:28 -0400
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 66ms (Views: 56.6ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/posts" for ::1 at 2016-10-20 11:04:00 -0400
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zqChsL4Bq2GGtO6cHmave/rPpoE/DZFRq1tI7M43qzA1seCHH6W5VNtHEr5uP0gUmUjtL5+fm9GURtp/mPtuMg==", "post"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x007fd0a0b35858 @tempfile=#<Tempfile:/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/RackMultipart20161020-11571-1ivptit.png>, @original_filename="Screen Shot 2016-10-20 at 10.58.44 AM.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"post[image]\"; filename=\"Screen Shot 2016-10-20 at 10.58.44 AM.png\"\r\nContent-Type: image/png\r\n">, "caption"=>"Flying session #virgina #goPro"}, "commit"=>"Create Post"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Command :: file -b --mime '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/6cac3ff2f1a5c6f7cba7558f270e80fa20161020-11571-14gd87.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/0fd35255fbed6528bcd35398eac01f5f20161020-11571-1u2emhr.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/0fd35255fbed6528bcd35398eac01f5f20161020-11571-1u2emhr.png[0]'
+Command :: convert '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/0fd35255fbed6528bcd35398eac01f5f20161020-11571-1u2emhr.png[0]' -auto-orient -resize "640" '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/9257f68cde5551010c499206ff2c014d20161020-11571-1ifdztj'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Command :: file -b --mime '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/6cac3ff2f1a5c6f7cba7558f270e80fa20161020-11571-16ev9c7.png'
+  [1m[35mSQL (2.0ms)[0m  [1m[32mINSERT INTO "posts" ("caption", "created_at", "updated_at", "image_file_name", "image_content_type", "image_file_size", "image_updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["caption", "Flying session #virgina #goPro"], ["created_at", 2016-10-20 15:04:00 UTC], ["updated_at", 2016-10-20 15:04:00 UTC], ["image_file_name", "Screen_Shot_2016-10-20_at_10.58.44_AM.png"], ["image_content_type", "image/png"], ["image_file_size", 829369], ["image_updated_at", 2016-10-20 15:04:00 UTC], ["user_id", 1]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 573ms (ActiveRecord: 5.2ms)
+
+
+Started GET "/" for ::1 at 2016-10-20 11:04:00 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered posts/index.html.erb within layouts/application (9.9ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 54ms (Views: 48.3ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/posts/new" for ::1 at 2016-10-20 11:04:05 -0400
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 71ms (Views: 59.2ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/posts" for ::1 at 2016-10-20 11:04:40 -0400
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iJfJ/OiK3zIRb5EzMYy6Lj7UOpMmWlifX+8UC8c0gaRzhojLSS7NB0ycbRFB1V1BXVNxPYbIUh9g8oaYkfhEpg==", "post"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x007fd0a19d0188 @tempfile=#<Tempfile:/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/RackMultipart20161020-11571-ei2cm8.png>, @original_filename="Screen Shot 2016-10-20 at 10.58.54 AM.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"post[image]\"; filename=\"Screen Shot 2016-10-20 at 10.58.54 AM.png\"\r\nContent-Type: image/png\r\n">, "caption"=>"www.capitolQuads.com #teamPilot #FPVracing"}, "commit"=>"Create Post"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Command :: file -b --mime '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/7af3ae8c8fa16f1986e5fb2637df80fd20161020-11571-du7joa.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/ee9a9f3ecb5fed3ed2475f97f312518c20161020-11571-w2h4ng.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/ee9a9f3ecb5fed3ed2475f97f312518c20161020-11571-w2h4ng.png[0]'
+Command :: convert '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/ee9a9f3ecb5fed3ed2475f97f312518c20161020-11571-w2h4ng.png[0]' -auto-orient -resize "640" '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/35f7884b9a06ce4f4d855e16cde72a1f20161020-11571-1ipn6ba'
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+Command :: file -b --mime '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/7af3ae8c8fa16f1986e5fb2637df80fd20161020-11571-iepxu3.png'
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO "posts" ("caption", "created_at", "updated_at", "image_file_name", "image_content_type", "image_file_size", "image_updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["caption", "www.capitolQuads.com #teamPilot #FPVracing"], ["created_at", 2016-10-20 15:04:41 UTC], ["updated_at", 2016-10-20 15:04:41 UTC], ["image_file_name", "Screen_Shot_2016-10-20_at_10.58.54_AM.png"], ["image_content_type", "image/png"], ["image_file_size", 586403], ["image_updated_at", 2016-10-20 15:04:40 UTC], ["user_id", 1]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 701ms (ActiveRecord: 3.4ms)
+
+
+Started GET "/" for ::1 at 2016-10-20 11:04:41 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered posts/index.html.erb within layouts/application (9.6ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 52ms (Views: 47.2ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/posts/new" for ::1 at 2016-10-20 11:04:47 -0400
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 67ms (Views: 60.7ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/posts" for ::1 at 2016-10-20 11:05:10 -0400
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"h7VfI4+Yt0PEFvHHjGZPSZ5o2OGc2s9v/GE/A6T4Jzt8pB4ULjyldpnlDeX8P6gm/e+TTzxIxe/DfK2Q8jTiOQ==", "post"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x007fd0998df268 @tempfile=#<Tempfile:/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/RackMultipart20161020-11571-11zotgb.png>, @original_filename="Screen Shot 2016-10-20 at 10.59.02 AM.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"post[image]\"; filename=\"Screen Shot 2016-10-20 at 10.59.02 AM.png\"\r\nContent-Type: image/png\r\n">, "caption"=>"tuning session #Qav-R"}, "commit"=>"Create Post"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Command :: file -b --mime '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/ce5bbed6862656cb9d44ae2c6e66cc0020161020-11571-9pi3rf.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/0dfe87b4ca8ad02bf4e581982b51671820161020-11571-lkjg8h.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/0dfe87b4ca8ad02bf4e581982b51671820161020-11571-lkjg8h.png[0]'
+Command :: convert '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/0dfe87b4ca8ad02bf4e581982b51671820161020-11571-lkjg8h.png[0]' -auto-orient -resize "640" '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/6ad224a421539e37e6f73ca4b4b8276720161020-11571-1n1nroa'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+Command :: file -b --mime '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/ce5bbed6862656cb9d44ae2c6e66cc0020161020-11571-axlr09.png'
+  [1m[35mSQL (1.5ms)[0m  [1m[32mINSERT INTO "posts" ("caption", "created_at", "updated_at", "image_file_name", "image_content_type", "image_file_size", "image_updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["caption", "tuning session #Qav-R"], ["created_at", 2016-10-20 15:05:11 UTC], ["updated_at", 2016-10-20 15:05:11 UTC], ["image_file_name", "Screen_Shot_2016-10-20_at_10.59.02_AM.png"], ["image_content_type", "image/png"], ["image_file_size", 669224], ["image_updated_at", 2016-10-20 15:05:10 UTC], ["user_id", 1]]
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 661ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/" for ::1 at 2016-10-20 11:05:11 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered posts/index.html.erb within layouts/application (12.1ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 62ms (Views: 57.4ms | ActiveRecord: 2.0ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2016-10-20 11:05:14 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"AfAbJ0hTd2IckZzs/yDJYYITYppOI1DBFo95zrDFDsDhTMW/BndrRGYAFj0KUC4K+bsr7RkaAu0PJoxjpYq1Yg=="}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 15ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2016-10-20 11:05:14 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered posts/index.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 55ms (Views: 49.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-10-20 11:05:16 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (1.5ms)
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 70ms (Views: 68.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2016-10-20 11:05:30 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (1.1ms)
+  Rendered /Users/a-espinoza/.rvm/gems/ruby-2.3.1/gems/devise-4.2.0/app/views/devise/registrations/new.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 81ms (Views: 80.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2016-10-20 11:05:45 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uCgsYFBUaoRRtPsyL5oUNXoq7ZFsrqo/pGCjn1Gq2RrUiIxC0qRFvs021tTGf1RS1FRR2IZdkyrhKe3d32SU/A==", "user"=>{"email"=>"drones@cool.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "drones@cool.com"], ["LIMIT", 1]]
+  [1m[35mSQL (9.0ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "drones@cool.com"], ["encrypted_password", "$2a$11$zP5bg6vOblbHGszhB/C7pOeVR6hs3rBruWjTFvfBX/XQRnwGJicO."], ["created_at", 2016-10-20 15:05:46 UTC], ["updated_at", 2016-10-20 15:05:46 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = $1, "current_sign_in_at" = $2, "last_sign_in_at" = $3, "current_sign_in_ip" = $4, "last_sign_in_ip" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["sign_in_count", 1], ["current_sign_in_at", 2016-10-20 15:05:46 UTC], ["last_sign_in_at", 2016-10-20 15:05:46 UTC], ["current_sign_in_ip", "::1/128"], ["last_sign_in_ip", "::1/128"], ["updated_at", 2016-10-20 15:05:46 UTC], ["id", 2]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 207ms (ActiveRecord: 11.9ms)
+
+
+Started GET "/" for ::1 at 2016-10-20 11:05:46 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered posts/index.html.erb within layouts/application (10.3ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 56ms (Views: 51.4ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/posts/new" for ::1 at 2016-10-20 11:05:50 -0400
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 71ms (Views: 58.1ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/posts" for ::1 at 2016-10-20 11:06:11 -0400
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PQcAgthl7xW5iwzndCl2Rp9xa7DQWuOuGHksUT4UsOcytQPEGoBq7WETjrwTACjtiGQa5ZGmmq0/3NfEgiuS7g==", "post"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x007fd09b605e78 @tempfile=#<Tempfile:/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/RackMultipart20161020-11571-n6hhrd.png>, @original_filename="Screen Shot 2016-10-20 at 10.59.11 AM.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"post[image]\"; filename=\"Screen Shot 2016-10-20 at 10.59.11 AM.png\"\r\nContent-Type: image/png\r\n">, "caption"=>"Cool guy won first place! #wohoooo"}, "commit"=>"Create Post"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Command :: file -b --mime '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/750b090e900a6fb4b6e3b436f70e0db620161020-11571-1vchi1z.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/ca31d65343507ff140468bb9df24a8c520161020-11571-17klvja.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/ca31d65343507ff140468bb9df24a8c520161020-11571-17klvja.png[0]'
+Command :: convert '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/ca31d65343507ff140468bb9df24a8c520161020-11571-17klvja.png[0]' -auto-orient -resize "640" '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/873c4b20c459e75c9d8e1c56a0fac67820161020-11571-y3xdx6'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+Command :: file -b --mime '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/750b090e900a6fb4b6e3b436f70e0db620161020-11571-1xusnxq.png'
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "posts" ("caption", "created_at", "updated_at", "image_file_name", "image_content_type", "image_file_size", "image_updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["caption", "Cool guy won first place! #wohoooo"], ["created_at", 2016-10-20 15:06:12 UTC], ["updated_at", 2016-10-20 15:06:12 UTC], ["image_file_name", "Screen_Shot_2016-10-20_at_10.59.11_AM.png"], ["image_content_type", "image/png"], ["image_file_size", 860972], ["image_updated_at", 2016-10-20 15:06:11 UTC], ["user_id", 2]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 666ms (ActiveRecord: 3.6ms)
+
+
+Started GET "/" for ::1 at 2016-10-20 11:06:12 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered posts/index.html.erb within layouts/application (14.3ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 61ms (Views: 55.3ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/posts/new" for ::1 at 2016-10-20 11:06:20 -0400
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 75ms (Views: 64.2ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/posts" for ::1 at 2016-10-20 11:06:54 -0400
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/r1gBAu+sKtyy9y1TVnXFbZiuhHg1su2DhpE0apu11vxD2NCyVs1U6pTXu4qcIm+oXfLRKEqsrUpv79EFlH1Ug==", "post"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x007fd0a0c1b290 @tempfile=#<Tempfile:/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/RackMultipart20161020-11571-15y20zk.png>, @original_filename="Screen Shot 2016-10-20 at 10.59.20 AM.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"post[image]\"; filename=\"Screen Shot 2016-10-20 at 10.59.20 AM.png\"\r\nContent-Type: image/png\r\n">, "caption"=>"chillin-dronnin' #summerSayz"}, "commit"=>"Create Post"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Command :: file -b --mime '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/c849068f94e71d4416c011db9831a00c20161020-11571-1100tbu.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/9eb35e3768867dd9232c0b2d5cf2328a20161020-11571-r18lco.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/9eb35e3768867dd9232c0b2d5cf2328a20161020-11571-r18lco.png[0]'
+Command :: convert '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/9eb35e3768867dd9232c0b2d5cf2328a20161020-11571-r18lco.png[0]' -auto-orient -resize "640" '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/1408623ada3a36c1d64f26d93c64327220161020-11571-ylwvpb'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+Command :: file -b --mime '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/c849068f94e71d4416c011db9831a00c20161020-11571-43lseh.png'
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "posts" ("caption", "created_at", "updated_at", "image_file_name", "image_content_type", "image_file_size", "image_updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["caption", "chillin-dronnin' #summerSayz"], ["created_at", 2016-10-20 15:06:54 UTC], ["updated_at", 2016-10-20 15:06:54 UTC], ["image_file_name", "Screen_Shot_2016-10-20_at_10.59.20_AM.png"], ["image_content_type", "image/png"], ["image_file_size", 561081], ["image_updated_at", 2016-10-20 15:06:54 UTC], ["user_id", 2]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 675ms (ActiveRecord: 3.1ms)
+
+
+Started GET "/" for ::1 at 2016-10-20 11:06:54 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered posts/index.html.erb within layouts/application (28.1ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 149ms (Views: 143.2ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/posts/new" for ::1 at 2016-10-20 11:07:02 -0400
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 75ms (Views: 53.1ms | ActiveRecord: 2.3ms)
+
+
+Started POST "/posts" for ::1 at 2016-10-20 11:07:32 -0400
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KgX9ZVu34MLMxA8PQ93/5SwEyL5Byz6fDhr0UswXfNslt/4jmVJlOhRcjVQk9KFOOxG56wA3R5wpvw/HcChe0g==", "post"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x007fd0a0974280 @tempfile=#<Tempfile:/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/RackMultipart20161020-11571-12889lv.png>, @original_filename="Screen Shot 2016-10-20 at 10.59.48 AM.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"post[image]\"; filename=\"Screen Shot 2016-10-20 at 10.59.48 AM.png\"\r\nContent-Type: image/png\r\n">, "caption"=>"SecretWeaponDrones BX-5 #yeah #quadcopter"}, "commit"=>"Create Post"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Command :: file -b --mime '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/b3d7a9f79db5b12359ed73028927bd1920161020-11571-7658k7.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/168cff1cbb70cf843319be9a140dd2c520161020-11571-1ul1j1v.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/168cff1cbb70cf843319be9a140dd2c520161020-11571-1ul1j1v.png[0]'
+Command :: convert '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/168cff1cbb70cf843319be9a140dd2c520161020-11571-1ul1j1v.png[0]' -auto-orient -resize "640" '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/ec82f0d9ec685528087d7ad7544a378820161020-11571-gjn9qf'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+Command :: file -b --mime '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/b3d7a9f79db5b12359ed73028927bd1920161020-11571-1wp1u37.png'
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "posts" ("caption", "created_at", "updated_at", "image_file_name", "image_content_type", "image_file_size", "image_updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["caption", "SecretWeaponDrones BX-5 #yeah #quadcopter"], ["created_at", 2016-10-20 15:07:33 UTC], ["updated_at", 2016-10-20 15:07:33 UTC], ["image_file_name", "Screen_Shot_2016-10-20_at_10.59.48_AM.png"], ["image_content_type", "image/png"], ["image_file_size", 568191], ["image_updated_at", 2016-10-20 15:07:32 UTC], ["user_id", 2]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 500ms (ActiveRecord: 3.1ms)
+
+
+Started GET "/" for ::1 at 2016-10-20 11:07:33 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered posts/index.html.erb within layouts/application (17.6ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 74ms (Views: 68.6ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/posts/new" for ::1 at 2016-10-20 11:07:37 -0400
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 80ms (Views: 59.3ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/posts" for ::1 at 2016-10-20 11:08:09 -0400
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lyGlC8n2wfSsIJQ7EDhGFVgftcWQNszuhDe8TQz7dSOYk6ZNCxNEDHS4FmB3ERi+TwrEkNHKte2jkkfYsMRXKg==", "post"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x007fd09b3c3390 @tempfile=#<Tempfile:/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/RackMultipart20161020-11571-imr53k.png>, @original_filename="Screen Shot 2016-10-20 at 10.59.58 AM.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"post[image]\"; filename=\"Screen Shot 2016-10-20 at 10.59.58 AM.png\"\r\nContent-Type: image/png\r\n">, "caption"=>"ZoomPod Mitsuko #shenDrones #goProSession #hashtags"}, "commit"=>"Create Post"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Command :: file -b --mime '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/3de19883e7f2a5b85a7bfcedc2eefd9520161020-11571-1hhqqu6.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/9edb2fede1860ef956451ea29ed5a26020161020-11571-1gyet5w.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/9edb2fede1860ef956451ea29ed5a26020161020-11571-1gyet5w.png[0]'
+Command :: convert '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/9edb2fede1860ef956451ea29ed5a26020161020-11571-1gyet5w.png[0]' -auto-orient -resize "640" '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/d9f6f0b4692a9c155c48587020a22dfd20161020-11571-90gi3z'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+Command :: file -b --mime '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/3de19883e7f2a5b85a7bfcedc2eefd9520161020-11571-4n482k.png'
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "posts" ("caption", "created_at", "updated_at", "image_file_name", "image_content_type", "image_file_size", "image_updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["caption", "ZoomPod Mitsuko #shenDrones #goProSession #hashtags"], ["created_at", 2016-10-20 15:08:10 UTC], ["updated_at", 2016-10-20 15:08:10 UTC], ["image_file_name", "Screen_Shot_2016-10-20_at_10.59.58_AM.png"], ["image_content_type", "image/png"], ["image_file_size", 730687], ["image_updated_at", 2016-10-20 15:08:09 UTC], ["user_id", 2]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 637ms (ActiveRecord: 3.4ms)
+
+
+Started GET "/" for ::1 at 2016-10-20 11:08:10 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered posts/index.html.erb within layouts/application (19.4ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 71ms (Views: 65.6ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/" for ::1 at 2016-10-20 11:08:13 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered posts/index.html.erb within layouts/application (17.6ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 62ms (Views: 56.9ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/posts" for ::1 at 2016-10-20 11:08:16 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered posts/index.html.erb within layouts/application (20.1ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 64ms (Views: 57.4ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/posts/9" for ::1 at 2016-10-20 11:09:10 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered posts/show.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 63ms (Views: 50.0ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/posts/9" for ::1 at 2016-10-20 11:09:35 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered posts/show.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 56ms (Views: 47.2ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/posts/9" for ::1 at 2016-10-20 11:10:39 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered posts/show.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 100ms (Views: 94.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/posts/9" for ::1 at 2016-10-20 11:11:00 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered posts/show.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 74ms (Views: 68.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/posts/9" for ::1 at 2016-10-20 11:11:12 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered posts/show.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 83ms (Views: 75.0ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/posts/9" for ::1 at 2016-10-20 11:11:22 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered posts/show.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 86ms (Views: 79.5ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/posts/9" for ::1 at 2016-10-20 11:11:29 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered posts/show.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 89ms (Views: 82.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/posts/9" for ::1 at 2016-10-20 11:11:52 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered posts/show.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 82ms (Views: 76.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/posts/9" for ::1 at 2016-10-20 11:11:59 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered posts/show.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 76ms (Views: 68.8ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/posts/9" for ::1 at 2016-10-20 11:12:06 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered posts/show.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 54ms (Views: 48.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/posts/9" for ::1 at 2016-10-20 11:12:11 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered posts/show.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 60ms (Views: 52.9ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/posts/9" for ::1 at 2016-10-20 11:13:21 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered posts/show.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 77ms (Views: 71.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/posts/9" for ::1 at 2016-10-20 11:13:33 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered posts/show.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 54ms (Views: 49.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/posts/9" for ::1 at 2016-10-20 11:13:45 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered posts/show.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 48ms (Views: 42.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/posts/9" for ::1 at 2016-10-20 11:13:53 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered posts/show.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 55ms (Views: 49.9ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/posts/9" for ::1 at 2016-10-20 11:14:02 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered posts/show.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 46ms (Views: 41.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/posts/9" for ::1 at 2016-10-20 11:14:11 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered posts/show.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 65ms (Views: 57.3ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/posts" for ::1 at 2016-10-20 11:14:17 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered posts/index.html.erb within layouts/application (27.5ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 59ms (Views: 52.3ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/posts/9" for ::1 at 2016-10-20 11:14:24 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered posts/show.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 79ms (Views: 73.4ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/posts/9/edit" for ::1 at 2016-10-20 11:14:29 -0400
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 68ms (Views: 56.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/posts" for ::1 at 2016-10-20 11:14:37 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered posts/index.html.erb within layouts/application (30.0ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 86ms (Views: 78.7ms | ActiveRecord: 2.8ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2016-10-20 11:14:40 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"+ho8pz6IJOOOxtqlnQOZTmO5Sc79IAf8Pl7MWVctrlPSeor/rWNCitxU/cjZ4IL2yYsgo8OACiJSvMv4KB6BMg=="}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 9ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/" for ::1 at 2016-10-20 11:14:40 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered posts/index.html.erb within layouts/application (17.2ms)
+Completed 200 OK in 64ms (Views: 59.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/posts/9" for ::1 at 2016-10-20 11:14:41 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (6.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered posts/show.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 72ms (Views: 61.3ms | ActiveRecord: 7.4ms)
+
+

@@ -31,19 +31,19 @@ display: inline-flex;
   }
 
   .caption{
-font-size: 44px; 
+font-size: 44px;
 }
 
   .new_post, .back {
     background-color: #FFFFFF;
-    margin-top: 25px;;
+    margin-top: 70px;;
    border: none;
    color: white;
    padding: 10px 25px;
    text-align: center;
    text-decoration: none;
-   display: inline-block;
    float: right;
+   display: inline;
    font-size: 20px;
    border-radius: 5px;
    box-shadow: 2px 2px 1px #cccccc;
@@ -119,6 +119,17 @@ float: right;
   }
 
   .edit-links {
-    margin-top: 20px;
-    margin-bottom: 40px;
+    background-color: #FFFFFF;
+    margin-top: 25px;
+    margin-bottom: 20px;
+   border: none;
+   color: white;
+   padding: 10px 25px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   float: right;
+   font-size: 20px;
+   border-radius: 5px;
+   box-shadow: 2px 2px 1px #cccccc;
   }
