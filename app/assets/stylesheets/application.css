@@ -18,12 +18,23 @@
     background-color: #fafafa;
     font-family: 'Roboto', sans-serif;
   }
+.notice, .alert{
 
-  .caption{
-    border: 2px solid red;
+}
+.navbar-right {
+  border: 5px solid red;
+}
+
+  .img {
+max-height: 75px;
+display: inline-flex;
   }
 
-  .new_post{
+  .caption{
+font-size: 44px; 
+}
+
+  .new_post, .back {
     background-color: #FFFFFF;
     margin-top: 25px;;
    border: none;
@@ -32,24 +43,16 @@
    text-align: center;
    text-decoration: none;
    display: inline-block;
+   float: right;
    font-size: 20px;
    border-radius: 5px;
    box-shadow: 2px 2px 1px #cccccc;
 }
 
-  .navbar-brand {
-      font-size: 25px;
-    a {
-      color: #125688;
-      padding: 16px;
-    }
-  }
-
   .sign{
     color: #256c9e;
-    float: right;
-    padding-bottom: 10px;
-  }
+float: right;
+}
 
   .navbar-default {
     background-color: #fff;
@@ -57,6 +60,7 @@
     .navbar-nav li a {
       color: #125688;
       text-decoration: none;
+      box-shadow: 2px 2px 1px #cccccc;
     }
   }
 
