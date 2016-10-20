@@ -7,6 +7,8 @@ gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 gem 'pg', '~> 0.18'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
+#devise gem
+gem 'devise'
 #Paperclip to upload pictures ( https://github.com/thoughtbot/paperclip#image-processor )
 gem "paperclip", "~> 5.0.0"
 #this gem will handle the forms! (https://github.com/plataformatec/simple_form)

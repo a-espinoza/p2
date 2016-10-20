@@ -2365,3 +2365,262 @@ Processing by PostsController#index as HTML
 Completed 200 OK in 50ms (Views: 46.8ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/posts" for ::1 at 2016-10-19 21:01:43 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (2.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 616ms (Views: 587.5ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/posts/new" for ::1 at 2016-10-19 21:01:46 -0400
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (103.3ms)
+Completed 200 OK in 180ms (Views: 147.4ms | ActiveRecord: 16.4ms)
+
+
+Started POST "/posts" for ::1 at 2016-10-19 21:01:51 -0400
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8+OJ+RPbLJ2AhITYtUUJ4vf9H0qFABwnaxLHdZ97CGCzAa7tTgguWeIXs6H4UI7OKdeqF+OO+sspf5W9nzEm7A==", "post"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x007fdb1d4d9338 @tempfile=#<Tempfile:/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/RackMultipart20161019-33827-2qo3js.JPG>, @original_filename="IMG_6819.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"post[image]\"; filename=\"IMG_6819.JPG\"\r\nContent-Type: image/jpeg\r\n">, "caption"=>"edw"}, "commit"=>"Create Post"}
+Command :: file -b --mime '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/a54dcf5530bf112abbe9ab6d5be270d020161019-33827-i0tqnd.JPG'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/a54dcf5530bf112abbe9ab6d5be270d020161019-33827-1fwiyiy.JPG[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/a54dcf5530bf112abbe9ab6d5be270d020161019-33827-1fwiyiy.JPG[0]'
+Command :: convert '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/a54dcf5530bf112abbe9ab6d5be270d020161019-33827-1fwiyiy.JPG[0]' -auto-orient -resize "640" '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/1ac0f06ac4cf3f7c5a9342d0215ee0af20161019-33827-bmpk6x'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+Command :: file -b --mime '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/a54dcf5530bf112abbe9ab6d5be270d020161019-33827-17wxhag.JPG'
+  [1m[35mSQL (5.4ms)[0m  [1m[32mINSERT INTO "posts" ("caption", "created_at", "updated_at", "image_file_name", "image_content_type", "image_file_size", "image_updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["caption", "edw"], ["created_at", 2016-10-20 01:01:53 UTC], ["updated_at", 2016-10-20 01:01:53 UTC], ["image_file_name", "IMG_6819.JPG"], ["image_content_type", "image/jpeg"], ["image_file_size", 1315205], ["image_updated_at", 2016-10-20 01:01:51 UTC]]
+  [1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 1492ms (ActiveRecord: 11.7ms)
+
+
+Started GET "/posts" for ::1 at 2016-10-19 21:01:53 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 62ms (Views: 56.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/posts/1" for ::1 at 2016-10-19 21:01:58 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (1.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 82ms (Views: 55.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/posts/1/edit" for ::1 at 2016-10-19 21:02:00 -0400
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (5.8ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 88ms (Views: 69.2ms | ActiveRecord: 5.8ms)
+
+
+Started DELETE "/posts/1" for ::1 at 2016-10-19 21:02:03 -0400
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ElhFrCFyTin+o3Tmq7l9jk6Gdx9CTcczSpVnC5AwOJzROBCqR7XKV3KaQZ+6QBTE8qDDLvEcFBvs7eVgJtt/Tg==", "id"=>"1"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 1]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+[paperclip] deleting /Users/a-espinoza/Documents/wdi/projects/p2/public/system/posts/images/000/000/001/original/IMG_6819.JPG
+[paperclip] deleting /Users/a-espinoza/Documents/wdi/projects/p2/public/system/posts/images/000/000/001/medium/IMG_6819.JPG
+Redirected to http://localhost:3000/
+Completed 302 Found in 11ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/" for ::1 at 2016-10-19 21:02:03 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 44ms (Views: 40.1ms | ActiveRecord: 0.5ms)
+
+
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(868143090698726430);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to DeviseCreateUsers (20161020010846)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (21.6ms)[0m  [1m[35mCREATE TABLE "users" ("id" serial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" inet, "last_sign_in_ip" inet, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(868143090698726430)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[35m (134.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS "p2_1_development"[0m
+  [1m[35m (142.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "p2_1_test"[0m
+  [1m[35m (44.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying PRIMARY KEY)[0m
+  [1m[35m (4.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT pg_try_advisory_lock(868143090698726430);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreatePosts (20161019183932)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (12.5ms)[0m  [1m[35mCREATE TABLE "posts" ("id" serial primary key, "caption" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (2.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20161019183932"]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddAttachmentImageToPosts (20161019184608)
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+DEPRECATION WARNING: Directly inheriting from ActiveRecord::Migration is deprecated. Please specify the Rails release the migration was written for:
+
+  class AddAttachmentImageToPosts < ActiveRecord::Migration[4.2] (called from require at /Users/a-espinoza/Documents/wdi/projects/p2/bin/rails:9)
+  [1m[35m (1.9ms)[0m  [1m[35mALTER TABLE "posts" ADD "image_file_name" character varying[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "posts" ADD "image_content_type" character varying[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "posts" ADD "image_file_size" integer[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "posts" ADD "image_updated_at" timestamp[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20161019184608"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to DeviseCreateUsers (20161020010846)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (4.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" serial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" inet, "last_sign_in_ip" inet, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20161020010846"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", 2016-10-20 01:11:49 UTC], ["updated_at", 2016-10-20 01:11:49 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(868143090698726430)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (5.7ms)[0m  [1m[34mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'posts'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (4.5ms)[0m  [1m[34mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(868143090698726430);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(868143090698726430)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (4.7ms)[0m  [1m[34mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'posts'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (4.1ms)[0m  [1m[34mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+Started GET "/" for ::1 at 2016-10-19 21:13:32 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (18.1ms)
+Completed 200 OK in 520ms (Views: 499.1ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/posts/new" for ::1 at 2016-10-19 21:13:37 -0400
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (110.3ms)
+Completed 200 OK in 169ms (Views: 139.4ms | ActiveRecord: 9.6ms)
+
+
+Started POST "/posts" for ::1 at 2016-10-19 21:13:43 -0400
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mQnBQivin5Q3xXHT59EnIF2cwMWpFUH7IuPVeGO61izZ6+ZWdjGdUFVWRqqqxKAMg7Z1mM+bpxdgjoewY/D4oA==", "post"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x007fbfe8f5d098 @tempfile=#<Tempfile:/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/RackMultipart20161019-34535-1yct7t1.JPG>, @original_filename="IMG_6824.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"post[image]\"; filename=\"IMG_6824.JPG\"\r\nContent-Type: image/jpeg\r\n">, "caption"=>"dede"}, "commit"=>"Create Post"}
+Command :: file -b --mime '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/241b9bbca474feb2f5ce78cb4ab895de20161019-34535-17zjei4.JPG'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/241b9bbca474feb2f5ce78cb4ab895de20161019-34535-nkyauo.JPG[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/241b9bbca474feb2f5ce78cb4ab895de20161019-34535-nkyauo.JPG[0]'
+Command :: convert '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/241b9bbca474feb2f5ce78cb4ab895de20161019-34535-nkyauo.JPG[0]' -auto-orient -resize "640" '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/5456fc1d4de78187b82d5b6ad7700b7420161019-34535-1rfyxsp'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Command :: file -b --mime '/var/folders/61/xd27xh_s5szbtzk83gg_31x80000gn/T/241b9bbca474feb2f5ce78cb4ab895de20161019-34535-jq17eu.JPG'
+  [1m[35mSQL (2.3ms)[0m  [1m[32mINSERT INTO "posts" ("caption", "created_at", "updated_at", "image_file_name", "image_content_type", "image_file_size", "image_updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["caption", "dede"], ["created_at", 2016-10-20 01:13:45 UTC], ["updated_at", 2016-10-20 01:13:45 UTC], ["image_file_name", "IMG_6824.JPG"], ["image_content_type", "image/jpeg"], ["image_file_size", 1312912], ["image_updated_at", 2016-10-20 01:13:43 UTC]]
+  [1m[35m (5.7ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 1499ms (ActiveRecord: 8.3ms)
+
+
+Started GET "/posts" for ::1 at 2016-10-19 21:13:45 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 60ms (Views: 56.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts/1" for ::1 at 2016-10-19 21:13:47 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (1.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 118ms (Views: 96.2ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/posts/1/edit" for ::1 at 2016-10-19 21:13:50 -0400
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (2.6ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 81ms (Views: 59.2ms | ActiveRecord: 2.6ms)
+
+
+Started DELETE "/posts/1" for ::1 at 2016-10-19 21:13:54 -0400
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"y7RYjNw+8ARGxZD9xplwMb978kbTKp4oqqgZmW87rtgI1A2Kuvl0esr8pYTXYBl7A11Gd2B7TQAM0Jvy2dDpCg==", "id"=>"1"}
+  [1m[36mPost Load (1.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 1]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+[paperclip] deleting /Users/a-espinoza/Documents/wdi/projects/p2/public/system/posts/images/000/000/001/original/IMG_6824.JPG
+[paperclip] deleting /Users/a-espinoza/Documents/wdi/projects/p2/public/system/posts/images/000/000/001/medium/IMG_6824.JPG
+Redirected to http://localhost:3000/
+Completed 302 Found in 12ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/" for ::1 at 2016-10-19 21:13:54 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 49ms (Views: 45.8ms | ActiveRecord: 0.5ms)
+
+
